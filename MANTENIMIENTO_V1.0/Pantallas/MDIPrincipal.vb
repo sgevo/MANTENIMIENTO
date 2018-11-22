@@ -690,6 +690,75 @@ Public Class MDIPrincipal
 
                 fClientesFicha.Guardar()
 
+
+
+
+            Case DEFMENU.MAESTROS_FPAGO
+                Select Case ObtenerPermisosPantalla(ObtenerIdUnaPantalla(eventArgs.control.Id), UsuarioGrupo)
+                    Case 0
+                        ElPermiso = 0
+                        ObjError.Pantalla1 = Me
+                        ObjError.Tipo1 = 1 'Avisos
+                        ObjError.Titulo = "SEGURIDAD"
+                        ObjError.SetMensaje("No tiene Permiso para acceder a esta pantalla.")
+                        ObjError.Control1 = ""
+                        ObjError.Pie1 = False
+                        ObjError.Foco1 = 0
+                        FrmError.ObjError = ObjError
+                        FrmError.ShowDialog()
+                        If FrmError.DialogResult = DialogResult.OK Then
+                            FrmError.Dispose()
+                            Exit Sub
+                        End If
+                    Case 1
+                        ElPermiso = 1
+                        ObjError.Pantalla1 = Me
+                        ObjError.Tipo1 = 3 'Avisos
+                        ObjError.Titulo = "SEGURIDAD"
+                        ObjError.SetMensaje("No tiene Permiso para realizar cambios en esta pantalla.")
+                        ObjError.Control1 = ""
+                        ObjError.Pie1 = False
+                        ObjError.Foco1 = 0
+                        FrmError.ObjError = ObjError
+                        FrmError.ShowDialog()
+                        If FrmError.DialogResult = DialogResult.OK Then
+                            FrmError.Dispose()
+                        End If
+                End Select
+
+                'If Not (EstableceAccesoSinMsg(ID_BANCOS)) Then
+                '    MessageBox Me.hWnd, "Acceso no permitido. Consulte con su Administrador", Me.Caption, vbOKOnly + vbCritical
+                '    Exit Sub
+                'End If
+
+                If Not fFormasPagos Is Nothing Then
+                    CommandBars.TabWorkspace.FindItem(fFormasPagos.Handle).Selected = True
+                    Exit Sub
+                End If
+
+                Dim Form2 As FrmFormasPagos = New FrmFormasPagos With {
+                       .MdiParent = Me}
+                Form2.Permisos = ElPermiso
+                Form2.Show()
+
+            Case DEFMENU.MAESTROS_FPAGO_NUEVO
+                If Not fFormasPagos Is Nothing Then
+                    fFormasPagos.Menu_Nuevo()
+                End If
+            Case DEFMENU.MAESTROS_FPAGO_ELIMINAR
+                If Not fFormasPagos Is Nothing Then
+                    fFormasPagos.Menu_Eliminar()
+                End If
+            Case DEFMENU.MAESTROS_FPAGO_IMPRIMIR
+                If Not fFormasPagos Is Nothing Then
+                    fFormasPagos.Menu_Imprimir()
+                End If
+            Case DEFMENU.MAESTROS_FPAGO_SALIR
+                If Not fFormasPagos Is Nothing Then
+                    fFormasPagos.Close()
+                End If
+
+
             Case DEFMENU.PRINCIPAL_MANTENIMIENTO
                 Select Case ObtenerPermisosPantalla(ObtenerIdUnaPantalla(eventArgs.control.Id), UsuarioGrupo)
                     Case 0

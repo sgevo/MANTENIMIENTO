@@ -308,25 +308,23 @@ Public Class FrmClientesFichero
 
     End Sub
 
-
     Sub ConstruirMenu()
 
         If MDIPrincipal.RibbonBar.FindTab(DEFMENU.GRUPO_MAESTROS_CLIENTES) Is Nothing Then 'si no existe lo creo
-            TabPantalla = MDIPrincipal.RibbonBar.InsertTab(DEFMENU.GRUPO_MAESTROS_CLIENTES, "&CLIENTES")
+            TabPantalla = MDIPrincipal.RibbonBar.InsertTab(DEFMENU.GRUPO_MAESTROS_CLIENTES, "&Clientes")
             TabPantalla.Id = DEFMENU.GRUPO_MAESTROS_CLIENTES
 
             'GroupFile = TabPrincipal.Groups.AddGroup("&MANTE", 1001)
             'GroupFile.Add(XtremeCommandBars.XTPControlType.xtpControlButton, DEFMENU.PRINCIPAL_MANTENIMIENTO, "Mantenimiento", False, False)
             GroupFile = TabPantalla.Groups.AddGroup("&CLIENTES", DEFMENU.MAESTROS_CLIENTES)
             GroupFile.Add(XtremeCommandBars.XTPControlType.xtpControlButton, DEFMENU.MAESTROS_CLIENTES_NUEVO, "Nuevo", False, False).IconId = 100
-            GroupFile.Add(XtremeCommandBars.XTPControlType.xtpControlButton, DEFMENU.MAESTROS_CLIENTES_MODIFICAR, "Modificar", False, False).IconId = 100
             GroupFile.Add(XtremeCommandBars.XTPControlType.xtpControlButton, DEFMENU.MAESTROS_CLIENTES_IMPRIMIR, "Eliminar", False, False).IconId = 101
             GroupFile.Add(XtremeCommandBars.XTPControlType.xtpControlButton, DEFMENU.MAESTROS_CLIENTES_IMPRIMIR, "Imprimir", False, False).IconId = 102
             GroupFile.Add(XtremeCommandBars.XTPControlType.xtpControlButton, DEFMENU.MAESTROS_CLIENTES_FILTROFILA, "Filtro", False, False).IconId = 100
             GroupFile.Add(XtremeCommandBars.XTPControlType.xtpControlButton, DEFMENU.MAESTROS_CLIENTES_FILTROAVANZADO, "Filtro Avanzado", False, False).IconId = 100
             GroupFile.Add(XtremeCommandBars.XTPControlType.xtpControlButton, DEFMENU.MAESTROS_CLIENTES_QUITARFILTRO, "Quitar Filtro", False, False).IconId = 100
             GroupFile.Add(XtremeCommandBars.XTPControlType.xtpControlButton, DEFMENU.MAESTROS_CLIENTES_VISTAS, "Vistas", False, False).IconId = 100
-            GroupFile.Add(XtremeCommandBars.XTPControlType.xtpControlButton, DEFMENU.MAESTROS_CLIENTES_SALIR, "Salir", False, False).IconId = 100
+            GroupFile.Add(XtremeCommandBars.XTPControlType.xtpControlButton, DEFMENU.MAESTROS_CLIENTES_SALIR, "Salir", False, False).IconId = 103
         End If
 
         MDIPrincipal.RibbonBar.FindTab(DEFMENU.GRUPO_MAESTROS_CLIENTES).Visible = True

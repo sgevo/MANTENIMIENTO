@@ -126,6 +126,12 @@
         Public Const INFORMES_CARTASMANTE_EXCEL_CLIENTES As Integer = 3401
         Public Const INFORMES_CARTASMANTE_SALIR As Integer = 3499
 
+        Public Const GRUPO_MAESTROS_FPAGO As Integer = 260000
+        Public Const MAESTROS_FPAGO_NUEVO As Integer = 1900
+        Public Const MAESTROS_FPAGO_ELIMINAR As Integer = 1901
+        Public Const MAESTROS_FPAGO_IMPRIMIR As Integer = 1902
+        Public Const MAESTROS_FPAGO_SALIR As Integer = 1999
+
         Public Const STYLEBLUE As Integer = 3000
         Public Const STYLEBLACK As Integer = 3001
         Public Const STYLEAQUA As Integer = 3002

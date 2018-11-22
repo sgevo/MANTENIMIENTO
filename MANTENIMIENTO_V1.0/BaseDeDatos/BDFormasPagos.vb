@@ -104,23 +104,29 @@ Module BDFormasPagos
         BD.Desconectar(BDConexion)
     End Function
 
+    Sub EliminarFPago(objFPago As FormaPago)
 
+        Dim BDConexion As OleDbConnection
+        BDConexion = BD.Conectar()
 
+        Dim query As String = " DELETE * FROM FormaPago WHERE (Id=" & objFPago.Id1 & ");"
 
+        Using cmd As New OleDbCommand(query, BDConexion)
 
+            cmd.CommandType = CommandType.Text
+            cmd.CommandText = query
 
+            Try
+                cmd.ExecuteNonQuery()
 
+                BD.Desconectar(BDConexion)
+            Catch ex As Exception
+                MessageBox.Show(ex.Message.ToString(), "Error Formas de Pago")
+            End Try
 
+        End Using
 
-
-
-
-
-
-
-
-
-
+    End Sub
 
 
 End Module

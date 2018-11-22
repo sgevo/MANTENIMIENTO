@@ -1,5 +1,6 @@
 ﻿Imports AxXtremeReportControl
 Imports XtremeReportControl
+Imports MantEvolution.DefinicionesMenus
 
 Public Class FrmFormasPagos
 
@@ -7,13 +8,18 @@ Public Class FrmFormasPagos
     Const COL_ID = 0
     Const COL_DESCRIPCION = 1
     Const COL_PLAZOS = 2
-    Const COL_DIASENTREPALZOS = 3
+    Const COL_DIASENTREPLAZOS = 3
     Const COL_PRIMERPAGO = 4
     Const COL_AÑADIR = 5
+
+    Public Permisos As Long
 
     Dim HayErrores As Boolean
 
     Dim ArrayFormasPagos As New ArrayList()
+
+    Dim TabPantalla As XtremeCommandBars.RibbonTab = Nothing
+    Dim GroupFile As XtremeCommandBars.RibbonGroup = Nothing
 
     Private Sub FrmFormasPagos_Load(sender As Object, e As EventArgs) Handles Me.Load
         With RCFormasPagos
@@ -96,11 +102,11 @@ Public Class FrmFormasPagos
         RCFormasPagos.Columns.Column(COL_PLAZOS).EditOptions.AddSpinButton()
         RCFormasPagos.Columns.Column(COL_PLAZOS).EditOptions.GetInplaceButton(0).InsideCellButton = True
         RCFormasPagos.Columns.Column(COL_PLAZOS).Alignment = XTPColumnAlignment.xtpAlignmentRight
-        RCFormasPagos.Columns.Add(COL_DIASENTREPALZOS, "Dias Entre Plazos", 60, True)
-        RCFormasPagos.Columns.Find(COL_DIASENTREPALZOS).EditOptions.SelectTextOnEdit = True
-        RCFormasPagos.Columns.Column(COL_DIASENTREPALZOS).EditOptions.AddSpinButton()
-        RCFormasPagos.Columns.Column(COL_DIASENTREPALZOS).EditOptions.GetInplaceButton(0).InsideCellButton = True
-        RCFormasPagos.Columns.Column(COL_DIASENTREPALZOS).Alignment = XTPColumnAlignment.xtpAlignmentRight
+        RCFormasPagos.Columns.Add(COL_DIASENTREPLAZOS, "Dias Entre Plazos", 60, True)
+        RCFormasPagos.Columns.Find(COL_DIASENTREPLAZOS).EditOptions.SelectTextOnEdit = True
+        RCFormasPagos.Columns.Column(COL_DIASENTREPLAZOS).EditOptions.AddSpinButton()
+        RCFormasPagos.Columns.Column(COL_DIASENTREPLAZOS).EditOptions.GetInplaceButton(0).InsideCellButton = True
+        RCFormasPagos.Columns.Column(COL_DIASENTREPLAZOS).Alignment = XTPColumnAlignment.xtpAlignmentRight
         RCFormasPagos.Columns.Add(COL_PRIMERPAGO, "Primer Pago", 60, True)
         RCFormasPagos.Columns.Find(COL_PRIMERPAGO).EditOptions.SelectTextOnEdit = True
         RCFormasPagos.Columns.Column(COL_PRIMERPAGO).EditOptions.AddSpinButton()
@@ -187,7 +193,7 @@ Public Class FrmFormasPagos
         RCFormasPagos.FooterRows(0).Record.Item(COL_ID).Value = ""
         RCFormasPagos.FooterRows(0).Record.Item(COL_DESCRIPCION).Value = ""
         RCFormasPagos.FooterRows(0).Record.Item(COL_PLAZOS).Value = 1
-        RCFormasPagos.FooterRows(0).Record.Item(COL_DIASENTREPALZOS).Value = 0
+        RCFormasPagos.FooterRows(0).Record.Item(COL_DIASENTREPLAZOS).Value = 0
         RCFormasPagos.FooterRows(0).Record.Item(COL_PRIMERPAGO).Value = 0
 
 
@@ -377,14 +383,14 @@ Public Class FrmFormasPagos
             HayErrores = True
         End If
 
-        If RCFormasPagos.FocusedRow.Record.Item(COL_DIASENTREPALZOS).Caption < 0 Then
+        If RCFormasPagos.FocusedRow.Record.Item(COL_DIASENTREPLAZOS).Caption < 0 Then
 
             ObjError.SetMensaje("Los dias entre plazos no pueden ser menores a 0")
 
             If ObjError.Control1 = "" Then
                 ObjError.Control1 = "ReportControl"
                 'ObjError.Pie1 = True
-                ObjError.Foco1 = COL_DIASENTREPALZOS
+                ObjError.Foco1 = COL_DIASENTREPLAZOS
             End If
 
             HayErrores = True
@@ -460,12 +466,12 @@ Public Class FrmFormasPagos
 
                     HayErrores = True
                 End If
-            Case COL_DIASENTREPALZOS
+            Case COL_DIASENTREPLAZOS
                 If e.newValue < 0 Then
                     ObjError.SetMensaje("Los dias entre plazos no pueden ser menores que 0")
                     ObjError.Control1 = "ReportControl"
                     ObjError.Pie1 = True
-                    ObjError.Foco1 = COL_DIASENTREPALZOS
+                    ObjError.Foco1 = COL_DIASENTREPLAZOS
 
                     HayErrores = True
                 End If
@@ -500,9 +506,7 @@ Public Class FrmFormasPagos
 
         'Dim objProducto = New Producto(RCProductos.FooterRows(0).Record.Item(COL_ID).Value, RCProductos.FooterRows(0).Record.Item(COL_CODIGO).Value, RCProductos.FooterRows(0).Record.Item(COL_DESCRIPCION).Value, RCProductos.FooterRows(0).Record.Item(COL_VERSIONES).Value, RCProductos.FooterRows(0).Record.Item(COL_MANTENIMIENTO).Value, RCProductos.FooterRows(0).Record.Item(COL_RED).Value, RCProductos.FooterRows(0).Record.Item(COL_TEMPORAL).Value, RCProductos.FooterRows(0).Record.Item(COL_PRECIO).Value, RCProductos.FooterRows(0).Record.Item(COL_PRECIORED).Value)
         'Como es un registro nuevo, el campo Id=0
-        Dim objFormaPago = New FormaPago(0, RCFormasPagos.FooterRows(0).Record.Item(COL_DESCRIPCION).Value, RCFormasPagos.FooterRows(0).Record.Item(COL_PLAZOS).Value, RCFormasPagos.FooterRows(0).Record.Item(COL_DIASENTREPALZOS).Value, RCFormasPagos.FooterRows(0).Record.Item(COL_PRIMERPAGO).Value)
-
-
+        Dim objFormaPago = New FormaPago(0, RCFormasPagos.FooterRows(0).Record.Item(COL_DESCRIPCION).Value, RCFormasPagos.FooterRows(0).Record.Item(COL_PLAZOS).Value, RCFormasPagos.FooterRows(0).Record.Item(COL_DIASENTREPLAZOS).Value, RCFormasPagos.FooterRows(0).Record.Item(COL_PRIMERPAGO).Value)
 
 
         Dim proximaColumna As Integer
@@ -539,15 +543,127 @@ Public Class FrmFormasPagos
 
     End Sub
 
-    Private Sub RCFormasPagos_ItemCheck(sender As Object, e As _DReportControlEvents_ItemCheckEvent) Handles RCFormasPagos.ItemCheck
+    Sub ConstruirMenu()
+
+        If MDIPrincipal.RibbonBar.FindTab(DEFMENU.GRUPO_MAESTROS_FPAGO) Is Nothing Then 'si no existe lo creo
+            TabPantalla = MDIPrincipal.RibbonBar.InsertTab(DEFMENU.GRUPO_MAESTROS_FPAGO, "&Formas de Pago")
+            TabPantalla.Id = DEFMENU.GRUPO_MAESTROS_FPAGO
+
+            'GroupFile = TabPrincipal.Groups.AddGroup("&MANTE", 1001)
+            'GroupFile.Add(XtremeCommandBars.XTPControlType.xtpControlButton, DEFMENU.PRINCIPAL_MANTENIMIENTO, "Mantenimiento", False, False)
+            GroupFile = TabPantalla.Groups.AddGroup("&FORMAS DE PAGO", DEFMENU.MAESTROS_FPAGO)
+            GroupFile.Add(XtremeCommandBars.XTPControlType.xtpControlButton, DEFMENU.MAESTROS_FPAGO_NUEVO, "Nuevo", False, False).IconId = 100
+            GroupFile.Add(XtremeCommandBars.XTPControlType.xtpControlButton, DEFMENU.MAESTROS_FPAGO_IMPRIMIR, "Eliminar", False, False).IconId = 101
+            GroupFile.Add(XtremeCommandBars.XTPControlType.xtpControlButton, DEFMENU.MAESTROS_FPAGO_IMPRIMIR, "Imprimir", False, False).IconId = 102
+            GroupFile.Add(XtremeCommandBars.XTPControlType.xtpControlButton, DEFMENU.MAESTROS_FPAGO_SALIR, "Salir", False, False).IconId = 103
+        End If
+
+        MDIPrincipal.RibbonBar.FindTab(DEFMENU.GRUPO_MAESTROS_FPAGO).Visible = True
+        MDIPrincipal.RibbonBar.FindTab(DEFMENU.GRUPO_MAESTROS_FPAGO).Selected = True
 
     End Sub
 
-    Private Sub RCFormasPagos_PreviewKeyDownV(sender As Object, e As _DReportControlEvents_PreviewKeyDownVEvent) Handles RCFormasPagos.PreviewKeyDownV
-
+    Private Sub FrmFormasPagos_Activated(sender As Object, e As EventArgs) Handles Me.Activated
+        ConstruirMenu()
     End Sub
 
-    Private Sub RCFormasPagos_ColumnClick(sender As Object, e As _DReportControlEvents_ColumnClickEvent) Handles RCFormasPagos.ColumnClick
+    Private Sub FrmFormasPagos_Closed(sender As Object, e As EventArgs) Handles Me.Closed
+        MDIPrincipal.RibbonBar.RemoveTab(DEFMENU.GRUPO_MAESTROS_FPAGO)
+        'MDIPrincipal.RibbonBar.Reset()
+        MDIPrincipal.RibbonBar.RedrawBar()
+        MDIPrincipal.RibbonBar.RecalcLayout()
 
+        '   MDIPrincipal.RibbonBar.FindTab(DEFMENU.TAB_MAESTROS).Selected = True
+        MDIPrincipal.RibbonBar.FindTab(DEFMENU.GRUPO_MAESTROS_FPAGO).Visible = False
+    End Sub
+
+    Sub Menu_Imprimir()
+        RCFormasPagos.PrintOptions.Header.TextCenter = Me.Titulo.Caption
+        RCFormasPagos.PrintOptions.Header.Font.Size = 18
+        RCFormasPagos.PrintOptions.Header.Font.Bold = True
+        'RCProductos.PrintPreviewOptions.Title = Me.Titulo.Caption
+        RCFormasPagos.PrintPreview(True)
+    End Sub
+
+    Sub Menu_Nuevo()
+        Dim proximaColumna As Integer
+
+        RCFormasPagos.Navigator.CurrentFocusInFootersRows = True
+        proximaColumna = SiguienteColumnaEditable(RCFormasPagos, -1, True)
+        RCFormasPagos.Navigator.MoveToColumn(proximaColumna)
+        RCFormasPagos.Navigator.BeginEdit()
+    End Sub
+
+    Sub Menu_Eliminar()
+
+        Dim ObjError As New Errores
+
+        If RCFormasPagos.FocusedRow.Section.Index <> 1 Then Exit Sub
+
+        If Permisos <> 2 Then
+            ObjError.Pantalla1 = Me
+            ObjError.Tipo1 = 1 'Avisos
+
+            ObjError.Titulo = "Formas de Pago"
+
+            ObjError.SetMensaje("No dispone de Permiso para Eliminar Formas de Pago")
+
+            ObjError.Control1 = "ReportControl"
+            ObjError.Pie1 = True
+            ObjError.Foco1 = COL_DESCRIPCION
+
+            FrmError.ObjError = ObjError
+            FrmError.ShowDialog()
+            If FrmError.DialogResult = DialogResult.OK Then
+                FrmError.Dispose()
+                Exit Sub
+            End If
+        End If
+
+        'If ComprobarRelaciones() Then
+        '    ObjError.Pantalla1 = Me
+        '    ObjError.Tipo1 = 1 'Avisos
+
+        '    ObjError.Titulo = "Formas de Pago"
+
+        '    ObjError.SetMensaje("Esta Forma de Pago tiene registros relacionados," & Chr(13) & "elimínelos antes.")
+
+        '    ObjError.Control1 = "ReportControl"
+        '    ObjError.Pie1 = True
+        '    ObjError.Foco1 = COL_DESCRIPCION
+
+        '    FrmError.ObjError = ObjError
+        '    FrmError.ShowDialog()
+        '    If FrmError.DialogResult = DialogResult.OK Then
+        '        FrmError.Dispose()
+        '        Exit Sub
+        '    End If
+        'End If
+
+        ObjError.Pantalla1 = Me
+        ObjError.Tipo1 = 2 'Mensajes
+
+        ObjError.Titulo = "Formas de Pago"
+
+        ObjError.SetMensaje("¿Desea eliminar la Forma de Pago seleccionada?")
+
+        ObjError.Control1 = ""
+        ObjError.Pie1 = True
+        ObjError.Foco1 = COL_DESCRIPCION
+
+        FrmError.ObjError = ObjError
+        FrmError.ShowDialog()
+        'ControlErrores(ObjError)
+
+        If FrmError.DialogResult = DialogResult.Yes Then
+            FrmError.Dispose()
+            Dim E As ReportRow
+            E = RCFormasPagos.FocusedRow
+            Dim objFPago = New FormaPago(E.Record.Item(COL_ID).Value, E.Record.Item(COL_DESCRIPCION).Value, E.Record.Item(COL_PLAZOS).Value, E.Record.Item(COL_DIASENTREPLAZOS).Value, E.Record.Item(COL_PRIMERPAGO).Value)
+            EliminarFPago(objFPago)
+            RCFormasPagos.RemoveRowEx(RCFormasPagos.FocusedRow)
+        ElseIf FrmError.DialogResult = DialogResult.Cancel Then
+            FrmError.Dispose()
+        End If
     End Sub
 End Class
