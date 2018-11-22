@@ -1,0 +1,414 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{C9FAF652-3B25-43C4-85FA-7C9F77132959}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>MantEvolution.My.MyApplication</StartupObject>
+    <RootNamespace>MantEvolution</RootNamespace>
+    <AssemblyName>MANTENIMIENTO</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>MANTENIMIENTO.xml</DocumentationFile>
+    <NoWarn>41999,42016</NoWarn>
+    <RunCodeAnalysis>true</RunCodeAnalysis>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>MANTENIMIENTO.xml</DocumentationFile>
+    <NoWarn>41999,42016</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>WontaW.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="AxXtremeCommandBars" />
+    <Import Include="AxXtremeReportControl" />
+    <Import Include="AxXtremeShortcutBar" />
+    <Import Include="AxXtremeSuiteControls" />
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ApplicationEvents.vb" />
+    <Compile Include="BaseDeDatos\BD.vb" />
+    <Compile Include="BaseDeDatos\BDClientes.vb" />
+    <Compile Include="BaseDeDatos\BDFormasPagos.vb" />
+    <Compile Include="BaseDeDatos\BDGrupos.vb" />
+    <Compile Include="BaseDeDatos\BDPantallas.vb" />
+    <Compile Include="BaseDeDatos\BDPedidos.vb" />
+    <Compile Include="BaseDeDatos\BDPermisos.vb" />
+    <Compile Include="BaseDeDatos\BDProductos.vb" />
+    <Compile Include="BaseDeDatos\BDProvincias.vb" />
+    <Compile Include="BaseDeDatos\BDUsuarios.vb" />
+    <Compile Include="BaseDeDatos\BDPacks.vb" />
+    <Compile Include="BaseDeDatos\BDVersiones.vb" />
+    <Compile Include="BaseDeDatos\BDMovimientos.vb" />
+    <Compile Include="BaseDeDatos\BDProductosCliente.vb" />
+    <Compile Include="BaseDeDatos\BDTrabajos.vb" />
+    <Compile Include="BaseDeDatos\BDMantenimientos.vb" />
+    <Compile Include="BaseDeDatos\BDTareas.vb" />
+    <Compile Include="Clases\Pedido.vb" />
+    <Compile Include="Clases\Tarea.vb" />
+    <Compile Include="Clases\Mantenimiento.vb" />
+    <Compile Include="Clases\Trabajo.vb" />
+    <Compile Include="Clases\ProductosCliente.vb" />
+    <Compile Include="Clases\Movimiento.vb" />
+    <Compile Include="Clases\Cliente.vb" />
+    <Compile Include="Clases\Errores.vb" />
+    <Compile Include="Clases\FormaPago.vb" />
+    <Compile Include="Clases\Grupo.vb" />
+    <Compile Include="Clases\Pack.vb" />
+    <Compile Include="Clases\Pantalla.vb" />
+    <Compile Include="Clases\Permiso.vb" />
+    <Compile Include="Clases\Provincia.vb" />
+    <Compile Include="Clases\Usuario.vb" />
+    <Compile Include="Clases\Version.vb" />
+    <Compile Include="Clases\Producto.vb" />
+    <Compile Include="Modulos\Apariencia.vb" />
+    <Compile Include="Modulos\DefinicionesMDI.vb" />
+    <Compile Include="Modulos\Formatos.vb" />
+    <Compile Include="Modulos\DefinicionesPantallas.vb" />
+    <Compile Include="Modulos\RC.vb" />
+    <Compile Include="Pantallas\Form1.Designer.vb">
+      <DependentUpon>Form1.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Pantallas\Form1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pantallas\FrmClientesFicha.designer.vb">
+      <DependentUpon>FrmClientesFicha.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Pantallas\FrmClientesFicha.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pantallas\FrmClientesFichero.designer.vb">
+      <DependentUpon>FrmClientesFichero.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Pantallas\FrmClientesFichero.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pantallas\FrmFormasPagos.designer.vb">
+      <DependentUpon>FrmFormasPagos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Pantallas\FrmFormasPagos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pantallas\FrmInformesCartasMante.Designer.vb">
+      <DependentUpon>FrmInformesCartasMante.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Pantallas\FrmInformesCartasMante.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pantallas\FrmConsultaMantenimiento.Designer.vb">
+      <DependentUpon>FrmConsultaMantenimiento.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Pantallas\FrmConsultaMantenimiento.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pantallas\FrmEstadisticasVentas.Designer.vb">
+      <DependentUpon>FrmEstadisticasVentas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Pantallas\FrmEstadisticasVentas.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pantallas\FrmMantenimiento.Designer.vb">
+      <DependentUpon>FrmMantenimiento.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Pantallas\FrmMantenimiento.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pantallas\FrmPacks.designer.vb">
+      <DependentUpon>FrmPacks.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Pantallas\FrmPacks.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pantallas\FrmPedidos.designer.vb">
+      <DependentUpon>FrmPedidos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Pantallas\FrmPedidos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pantallas\FrmPedidosFichero.designer.vb">
+      <DependentUpon>FrmPedidosFichero.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Pantallas\FrmPedidosFichero.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pantallas\FrmSplash.Designer.vb">
+      <DependentUpon>FrmSplash.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Pantallas\FrmSplash.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pantallas\FrmError.designer.vb">
+      <DependentUpon>FrmError.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Pantallas\FrmError.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pantallas\FrmGrupos.designer.vb">
+      <DependentUpon>FrmGrupos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Pantallas\FrmGrupos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pantallas\FrmProductos.Designer.vb">
+      <DependentUpon>FrmProductos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Pantallas\FrmProductos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pantallas\FrmPermisos.designer.vb">
+      <DependentUpon>FrmPermisos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Pantallas\FrmPermisos.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pantallas\FrmUsuarios.designer.vb">
+      <DependentUpon>FrmUsuarios.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Pantallas\FrmUsuarios.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pantallas\FrmVersiones.designer.vb">
+      <DependentUpon>FrmVersiones.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Pantallas\FrmVersiones.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pantallas\MDIPrincipal.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pantallas\MDIPrincipal.Designer.vb">
+      <DependentUpon>MDIPrincipal.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Pantallas\Form1.resx">
+      <DependentUpon>Form1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pantallas\FrmClientesFicha.resx">
+      <DependentUpon>FrmClientesFicha.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pantallas\FrmClientesFichero.resx">
+      <DependentUpon>FrmClientesFichero.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pantallas\FrmConsultaMantenimiento.resx">
+      <DependentUpon>FrmConsultaMantenimiento.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pantallas\FrmEstadisticasVentas.resx">
+      <DependentUpon>FrmEstadisticasVentas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pantallas\FrmFormasPagos.resx">
+      <DependentUpon>FrmFormasPagos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pantallas\FrmInformesCartasMante.resx">
+      <DependentUpon>FrmInformesCartasMante.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pantallas\FrmMantenimiento.resx">
+      <DependentUpon>FrmMantenimiento.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pantallas\FrmPacks.resx">
+      <DependentUpon>FrmPacks.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pantallas\FrmPedidos.resx">
+      <DependentUpon>FrmPedidos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pantallas\FrmPedidosFichero.resx">
+      <DependentUpon>FrmPedidosFichero.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pantallas\FrmSplash.resx">
+      <DependentUpon>FrmSplash.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pantallas\FrmError.resx">
+      <DependentUpon>FrmError.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pantallas\FrmGrupos.resx">
+      <DependentUpon>FrmGrupos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pantallas\FrmProductos.resx">
+      <DependentUpon>FrmProductos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pantallas\FrmPermisos.resx">
+      <DependentUpon>FrmPermisos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pantallas\FrmUsuarios.resx">
+      <DependentUpon>FrmUsuarios.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pantallas\FrmVersiones.resx">
+      <DependentUpon>FrmVersiones.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pantallas\MDIPrincipal.resx">
+      <DependentUpon>MDIPrincipal.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="AxXtremeCommandBars">
+      <Guid>{555E8FCC-830E-45CC-AF00-A012D5AE7451}</Guid>
+      <VersionMajor>18</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="AxXtremeReportControl">
+      <Guid>{7CAC59E5-B703-4CCF-B326-8B956D962F27}</Guid>
+      <VersionMajor>18</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="AxXtremeShortcutBar">
+      <Guid>{C8E5842E-102B-4289-9D57-3B3F5B5E15D3}</Guid>
+      <VersionMajor>18</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="AxXtremeSuiteControls">
+      <Guid>{A8E5842E-102B-4289-9D57-3B3F5B5E15D3}</Guid>
+      <VersionMajor>18</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="stdole">
+      <Guid>{00020430-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="XtremeCommandBars">
+      <Guid>{555E8FCC-830E-45CC-AF00-A012D5AE7451}</Guid>
+      <VersionMajor>18</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="XtremeReportControl">
+      <Guid>{7CAC59E5-B703-4CCF-B326-8B956D962F27}</Guid>
+      <VersionMajor>18</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="XtremeShortcutBar">
+      <Guid>{C8E5842E-102B-4289-9D57-3B3F5B5E15D3}</Guid>
+      <VersionMajor>18</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="XtremeSuiteControls">
+      <Guid>{A8E5842E-102B-4289-9D57-3B3F5B5E15D3}</Guid>
+      <VersionMajor>18</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="WontaW.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+</Project>
