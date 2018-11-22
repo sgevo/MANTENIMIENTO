@@ -58,7 +58,7 @@ Public Class FrmPedidosFichero
 
         RCPedidos.Columns.Add(COL_ID, "Id", 100, True)
 
-        RCPedidos.Columns.Add(COL_NUMERO, "Numero XXX", 100, True)
+        RCPedidos.Columns.Add(COL_NUMERO, "Numero", 100, True)
         RCPedidos.Columns.Add(COL_FECHA, "Fecha", 250, True)
         RCPedidos.Columns.Add(COL_IDCLIENTE, "idCliente", 60, True)
         RCPedidos.Columns.Add(COL_CLIENTE, "Cliente", 100, True)
