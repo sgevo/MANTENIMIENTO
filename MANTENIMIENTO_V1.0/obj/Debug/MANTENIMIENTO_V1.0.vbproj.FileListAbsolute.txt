@@ -248,3 +248,8 @@ Y:\MANTENIMIENTO UNIFICADO\MANTENIMIENTO_V1.0\obj\Debug\MantEvolution.FrmFormasP
 \\Servidornas\intercambio\MANTENIMIENTO UNIFICADO\MANTENIMIENTO_V1.0\obj\Debug\MANTENIMIENTO.pdb
 \\Servidornas\intercambio\MANTENIMIENTO UNIFICADO\MANTENIMIENTO_V1.0\obj\Debug\MantEvolution.FrmPedidos.resources
 \\Servidornas\intercambio\MANTENIMIENTO UNIFICADO\MANTENIMIENTO_V1.0\obj\Debug\MantEvolution.FrmPedidosFichero.resources
+D:\PROYECTOS MANTENIMIENTO\MANTENIMIENTO\MANTENIMIENTO_V1.0\obj\Debug\MantEvolution.Form1.resources
+D:\PROYECTOS MANTENIMIENTO\MANTENIMIENTO\MANTENIMIENTO_V1.0\obj\Debug\MantEvolution.FrmClientesFicha.resources
+D:\PROYECTOS MANTENIMIENTO\MANTENIMIENTO\MANTENIMIENTO_V1.0\obj\Debug\MantEvolution.FrmFormasPagos.resources
+D:\PROYECTOS MANTENIMIENTO\MANTENIMIENTO\MANTENIMIENTO_V1.0\obj\Debug\MantEvolution.FrmPedidos.resources
+D:\PROYECTOS MANTENIMIENTO\MANTENIMIENTO\MANTENIMIENTO_V1.0\obj\Debug\MantEvolution.FrmPedidosFichero.resources
