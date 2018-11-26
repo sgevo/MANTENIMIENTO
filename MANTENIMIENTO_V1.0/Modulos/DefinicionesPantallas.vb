@@ -17,6 +17,8 @@
     Public fClientesFicha As FrmClientesFicha
     Public fClientesFichero As FrmClientesFichero
 
+    Public fTarifas As frmTarifas
+
     Public fEstadisticasVentas As FrmEstadisticasVentas
 
     Public fInformesCartasMante As FrmInformesCartasMante

@@ -95,7 +95,7 @@ Public Class FrmProductos
             Record.AddItem(ObjProducto.Descripcion1)
             Record.AddItem(ObjProducto.Tipo1)
             Record.AddItem(ObjProducto.Versiones1)
-            Record.AddItem(ObjProducto.Mantenimiento1)
+            Record.AddItem(ObjProducto.IdMantenimiento1)
             Record.AddItem(ObjProducto.Red1)
             Record.AddItem(ObjProducto.Temporal1)
             Record.AddItem(ObjProducto.Precio1)
@@ -259,7 +259,7 @@ Public Class FrmProductos
         registro.AddItem(objProducto.Descripcion1)
         registro.AddItem(objProducto.Tipo1)
         registro.AddItem(objProducto.Versiones1)
-        registro.AddItem(objProducto.Mantenimiento1)
+        registro.AddItem(objProducto.IdMantenimiento1)
         registro.AddItem(objProducto.Red1)
         registro.AddItem(objProducto.Temporal1)
         registro.AddItem(objProducto.Precio1)
@@ -909,4 +909,7 @@ Public Class FrmProductos
         MiItem.Alignment = XTPColumnAlignment.xtpAlignmentCenter
     End Sub
 
+    Private Sub FrmProductos_MouseUp(sender As Object, e As MouseEventArgs) Handles Me.MouseUp
+
+    End Sub
 End Class

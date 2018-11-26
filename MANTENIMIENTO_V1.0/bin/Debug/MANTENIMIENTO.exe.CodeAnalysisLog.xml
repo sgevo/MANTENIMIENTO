@@ -12,14 +12,14 @@
          <Members>
           <Member Name="#comprobarSiExisteCliente(MantEvolution.Cliente)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="False">
            <Messages>
-            <Message TypeName="Revisar consultas SQL para comprobar si tienen vulnerabilidades de seguridad" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2018-11-22 11:44:10Z" FixCategory="DependsOnFix">
+            <Message TypeName="Revisar consultas SQL para comprobar si tienen vulnerabilidades de seguridad" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2018-11-23 12:23:57Z" FixCategory="DependsOnFix">
              <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="D:\PROYECTOS MANTENIMIENTO\MANTENIMIENTO\MANTENIMIENTO_V1.0\BaseDeDatos" File="BDClientes.vb" Line="387">La cadena de consulta pasada a 'OleDbCommand.New(String, OleDbConnection)' en 'BDClientes.comprobarSiExisteCliente(Cliente)' podría contener las siguientes variables: 'Conversions.ToString(objcliente.Id1)'. Si alguna de estas variables puede proceder de datos proporcionados por el usuario, considere el uso de un procedimiento almacenado o una consulta SQL parametrizada en lugar de compilar la consulta con concatenaciones de cadenas.</Issue>
             </Message>
            </Messages>
           </Member>
           <Member Name="#ModificarCliente(MantEvolution.Cliente)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="False">
            <Messages>
-            <Message TypeName="Revisar consultas SQL para comprobar si tienen vulnerabilidades de seguridad" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2018-11-22 11:44:10Z" FixCategory="DependsOnFix">
+            <Message TypeName="Revisar consultas SQL para comprobar si tienen vulnerabilidades de seguridad" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2018-11-23 12:23:57Z" FixCategory="DependsOnFix">
              <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="D:\PROYECTOS MANTENIMIENTO\MANTENIMIENTO\MANTENIMIENTO_V1.0\BaseDeDatos" File="BDClientes.vb" Line="208">La cadena de consulta pasada a 'OleDbCommand.CommandText.Set(String)' en 'BDClientes.ModificarCliente(Cliente)' podría contener las siguientes variables: 'Conversions.ToString(objCliente.Id1)'. Si alguna de estas variables puede proceder de datos proporcionados por el usuario, considere el uso de un procedimiento almacenado o una consulta SQL parametrizada en lugar de compilar la consulta con concatenaciones de cadenas.</Issue>
              <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="D:\PROYECTOS MANTENIMIENTO\MANTENIMIENTO\MANTENIMIENTO_V1.0\BaseDeDatos" File="BDClientes.vb" Line="205">La cadena de consulta pasada a 'OleDbCommand.New(String, OleDbConnection)' en 'BDClientes.ModificarCliente(Cliente)' podría contener las siguientes variables: 'Conversions.ToString(objCliente.Id1)'. Si alguna de estas variables puede proceder de datos proporcionados por el usuario, considere el uso de un procedimiento almacenado o una consulta SQL parametrizada en lugar de compilar la consulta con concatenaciones de cadenas.</Issue>
             </Message>
@@ -27,7 +27,7 @@
           </Member>
           <Member Name="#ObtenerUnCliente(System.Int64)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="False">
            <Messages>
-            <Message TypeName="Revisar consultas SQL para comprobar si tienen vulnerabilidades de seguridad" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2018-11-22 11:44:10Z" FixCategory="DependsOnFix">
+            <Message TypeName="Revisar consultas SQL para comprobar si tienen vulnerabilidades de seguridad" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2018-11-23 12:23:57Z" FixCategory="DependsOnFix">
              <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="D:\PROYECTOS MANTENIMIENTO\MANTENIMIENTO\MANTENIMIENTO_V1.0\BaseDeDatos" File="BDClientes.vb" Line="119">La cadena de consulta pasada a 'OleDbCommand.New(String, OleDbConnection)' en 'BDClientes.ObtenerUnCliente(Long)' podría contener las siguientes variables: 'Conversions.ToString(IdCliente)'. Si alguna de estas variables puede proceder de datos proporcionados por el usuario, considere el uso de un procedimiento almacenado o una consulta SQL parametrizada en lugar de compilar la consulta con concatenaciones de cadenas.</Issue>
             </Message>
            </Messages>
@@ -38,14 +38,14 @@
          <Members>
           <Member Name="#ComprobarFormaPagoRepetido(System.String)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="False">
            <Messages>
-            <Message TypeName="Revisar consultas SQL para comprobar si tienen vulnerabilidades de seguridad" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2018-11-22 11:44:10Z" FixCategory="DependsOnFix">
+            <Message TypeName="Revisar consultas SQL para comprobar si tienen vulnerabilidades de seguridad" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2018-11-23 12:23:57Z" FixCategory="DependsOnFix">
              <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="D:\PROYECTOS MANTENIMIENTO\MANTENIMIENTO\MANTENIMIENTO_V1.0\BaseDeDatos" File="BDFormasPagos.vb" Line="92">La cadena de consulta pasada a 'OleDbCommand.New(String, OleDbConnection)' en 'BDFormasPagos.ComprobarFormaPagoRepetido(String)' podría contener las siguientes variables: 'Descripcion'. Si alguna de estas variables puede proceder de datos proporcionados por el usuario, considere el uso de un procedimiento almacenado o una consulta SQL parametrizada en lugar de compilar la consulta con concatenaciones de cadenas.</Issue>
             </Message>
            </Messages>
           </Member>
           <Member Name="#EliminarFPago(MantEvolution.FormaPago)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="False">
            <Messages>
-            <Message TypeName="Revisar consultas SQL para comprobar si tienen vulnerabilidades de seguridad" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2018-11-22 11:44:10Z" FixCategory="DependsOnFix">
+            <Message TypeName="Revisar consultas SQL para comprobar si tienen vulnerabilidades de seguridad" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2018-11-23 12:23:57Z" FixCategory="DependsOnFix">
              <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="D:\PROYECTOS MANTENIMIENTO\MANTENIMIENTO\MANTENIMIENTO_V1.0\BaseDeDatos" File="BDFormasPagos.vb" Line="117">La cadena de consulta pasada a 'OleDbCommand.CommandText.Set(String)' en 'BDFormasPagos.EliminarFPago(FormaPago)' podría contener las siguientes variables: 'Conversions.ToString(objFPago.Id1)'. Si alguna de estas variables puede proceder de datos proporcionados por el usuario, considere el uso de un procedimiento almacenado o una consulta SQL parametrizada en lugar de compilar la consulta con concatenaciones de cadenas.</Issue>
              <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="D:\PROYECTOS MANTENIMIENTO\MANTENIMIENTO\MANTENIMIENTO_V1.0\BaseDeDatos" File="BDFormasPagos.vb" Line="114">La cadena de consulta pasada a 'OleDbCommand.New(String, OleDbConnection)' en 'BDFormasPagos.EliminarFPago(FormaPago)' podría contener las siguientes variables: 'Conversions.ToString(objFPago.Id1)'. Si alguna de estas variables puede proceder de datos proporcionados por el usuario, considere el uso de un procedimiento almacenado o una consulta SQL parametrizada en lugar de compilar la consulta con concatenaciones de cadenas.</Issue>
             </Message>
@@ -57,14 +57,14 @@
          <Members>
           <Member Name="#ComprobarRepetidoGrupo(System.String)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="False">
            <Messages>
-            <Message TypeName="Revisar consultas SQL para comprobar si tienen vulnerabilidades de seguridad" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2018-11-22 11:44:10Z" FixCategory="DependsOnFix">
+            <Message TypeName="Revisar consultas SQL para comprobar si tienen vulnerabilidades de seguridad" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2018-11-23 12:23:57Z" FixCategory="DependsOnFix">
              <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="D:\PROYECTOS MANTENIMIENTO\MANTENIMIENTO\MANTENIMIENTO_V1.0\BaseDeDatos" File="BDGrupos.vb" Line="198">La cadena de consulta pasada a 'OleDbCommand.New(String, OleDbConnection)' en 'BDGrupos.ComprobarRepetidoGrupo(String)' podría contener las siguientes variables: 'Tipo'. Si alguna de estas variables puede proceder de datos proporcionados por el usuario, considere el uso de un procedimiento almacenado o una consulta SQL parametrizada en lugar de compilar la consulta con concatenaciones de cadenas.</Issue>
             </Message>
            </Messages>
           </Member>
           <Member Name="#EliminarGrupo(MantEvolution.Grupo)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="False">
            <Messages>
-            <Message TypeName="Revisar consultas SQL para comprobar si tienen vulnerabilidades de seguridad" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2018-11-22 11:44:10Z" FixCategory="DependsOnFix">
+            <Message TypeName="Revisar consultas SQL para comprobar si tienen vulnerabilidades de seguridad" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2018-11-23 12:23:57Z" FixCategory="DependsOnFix">
              <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="D:\PROYECTOS MANTENIMIENTO\MANTENIMIENTO\MANTENIMIENTO_V1.0\BaseDeDatos" File="BDGrupos.vb" Line="173">La cadena de consulta pasada a 'OleDbCommand.CommandText.Set(String)' en 'BDGrupos.EliminarGrupo(Grupo)' podría contener las siguientes variables: 'Conversions.ToString(objGrupo.Id1)'. Si alguna de estas variables puede proceder de datos proporcionados por el usuario, considere el uso de un procedimiento almacenado o una consulta SQL parametrizada en lugar de compilar la consulta con concatenaciones de cadenas.</Issue>
              <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="D:\PROYECTOS MANTENIMIENTO\MANTENIMIENTO\MANTENIMIENTO_V1.0\BaseDeDatos" File="BDGrupos.vb" Line="170">La cadena de consulta pasada a 'OleDbCommand.New(String, OleDbConnection)' en 'BDGrupos.EliminarGrupo(Grupo)' podría contener las siguientes variables: 'Conversions.ToString(objGrupo.Id1)'. Si alguna de estas variables puede proceder de datos proporcionados por el usuario, considere el uso de un procedimiento almacenado o una consulta SQL parametrizada en lugar de compilar la consulta con concatenaciones de cadenas.</Issue>
             </Message>
@@ -72,7 +72,7 @@
           </Member>
           <Member Name="#ModificarGrupo(MantEvolution.Grupo)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="False">
            <Messages>
-            <Message TypeName="Revisar consultas SQL para comprobar si tienen vulnerabilidades de seguridad" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2018-11-22 11:44:10Z" FixCategory="DependsOnFix">
+            <Message TypeName="Revisar consultas SQL para comprobar si tienen vulnerabilidades de seguridad" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2018-11-23 12:23:57Z" FixCategory="DependsOnFix">
              <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="D:\PROYECTOS MANTENIMIENTO\MANTENIMIENTO\MANTENIMIENTO_V1.0\BaseDeDatos" File="BDGrupos.vb" Line="147">La cadena de consulta pasada a 'OleDbCommand.CommandText.Set(String)' en 'BDGrupos.ModificarGrupo(Grupo)' podría contener las siguientes variables: 'Conversions.ToString(objGrupo.Id1)'. Si alguna de estas variables puede proceder de datos proporcionados por el usuario, considere el uso de un procedimiento almacenado o una consulta SQL parametrizada en lugar de compilar la consulta con concatenaciones de cadenas.</Issue>
              <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="D:\PROYECTOS MANTENIMIENTO\MANTENIMIENTO\MANTENIMIENTO_V1.0\BaseDeDatos" File="BDGrupos.vb" Line="144">La cadena de consulta pasada a 'OleDbCommand.New(String, OleDbConnection)' en 'BDGrupos.ModificarGrupo(Grupo)' podría contener las siguientes variables: 'Conversions.ToString(objGrupo.Id1)'. Si alguna de estas variables puede proceder de datos proporcionados por el usuario, considere el uso de un procedimiento almacenado o una consulta SQL parametrizada en lugar de compilar la consulta con concatenaciones de cadenas.</Issue>
             </Message>
@@ -80,7 +80,7 @@
           </Member>
           <Member Name="#ObtenerUnGrupo(System.Int64)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="False">
            <Messages>
-            <Message TypeName="Revisar consultas SQL para comprobar si tienen vulnerabilidades de seguridad" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2018-11-22 11:44:10Z" FixCategory="DependsOnFix">
+            <Message TypeName="Revisar consultas SQL para comprobar si tienen vulnerabilidades de seguridad" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2018-11-23 12:23:57Z" FixCategory="DependsOnFix">
              <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="D:\PROYECTOS MANTENIMIENTO\MANTENIMIENTO\MANTENIMIENTO_V1.0\BaseDeDatos" File="BDGrupos.vb" Line="63">La cadena de consulta pasada a 'OleDbCommand.New(String, OleDbConnection)' en 'BDGrupos.ObtenerUnGrupo(Long)' podría contener las siguientes variables: 'Conversions.ToString(idGrupo)'. Si alguna de estas variables puede proceder de datos proporcionados por el usuario, considere el uso de un procedimiento almacenado o una consulta SQL parametrizada en lugar de compilar la consulta con concatenaciones de cadenas.</Issue>
             </Message>
            </Messages>
@@ -91,7 +91,7 @@
          <Members>
           <Member Name="#ModificarMantenimiento(MantEvolution.Mantenimiento)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="False">
            <Messages>
-            <Message TypeName="Revisar consultas SQL para comprobar si tienen vulnerabilidades de seguridad" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2018-11-22 11:44:10Z" FixCategory="DependsOnFix">
+            <Message TypeName="Revisar consultas SQL para comprobar si tienen vulnerabilidades de seguridad" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2018-11-23 12:23:57Z" FixCategory="DependsOnFix">
              <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="D:\PROYECTOS MANTENIMIENTO\MANTENIMIENTO\MANTENIMIENTO_V1.0\BaseDeDatos" File="BDMantenimientos.vb" Line="119">La cadena de consulta pasada a 'OleDbCommand.CommandText.Set(String)' en 'BDMantenimientos.ModificarMantenimiento(Mantenimiento)' podría contener las siguientes variables: 'Conversions.ToString(objMantenimiento.Id1)'. Si alguna de estas variables puede proceder de datos proporcionados por el usuario, considere el uso de un procedimiento almacenado o una consulta SQL parametrizada en lugar de compilar la consulta con concatenaciones de cadenas.</Issue>
              <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="D:\PROYECTOS MANTENIMIENTO\MANTENIMIENTO\MANTENIMIENTO_V1.0\BaseDeDatos" File="BDMantenimientos.vb" Line="116">La cadena de consulta pasada a 'OleDbCommand.New(String, OleDbConnection)' en 'BDMantenimientos.ModificarMantenimiento(Mantenimiento)' podría contener las siguientes variables: 'Conversions.ToString(objMantenimiento.Id1)'. Si alguna de estas variables puede proceder de datos proporcionados por el usuario, considere el uso de un procedimiento almacenado o una consulta SQL parametrizada en lugar de compilar la consulta con concatenaciones de cadenas.</Issue>
             </Message>
@@ -99,35 +99,35 @@
           </Member>
           <Member Name="#ObtenerMantenimientos(System.Int64)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="False">
            <Messages>
-            <Message TypeName="Revisar consultas SQL para comprobar si tienen vulnerabilidades de seguridad" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2018-11-22 11:44:10Z" FixCategory="DependsOnFix">
+            <Message TypeName="Revisar consultas SQL para comprobar si tienen vulnerabilidades de seguridad" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2018-11-23 12:23:57Z" FixCategory="DependsOnFix">
              <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="D:\PROYECTOS MANTENIMIENTO\MANTENIMIENTO\MANTENIMIENTO_V1.0\BaseDeDatos" File="BDMantenimientos.vb" Line="22">La cadena de consulta pasada a 'OleDbCommand.New(String, OleDbConnection)' en 'BDMantenimientos.ObtenerMantenimientos(Long)' podría contener las siguientes variables: 'Conversions.ToString(idCliente)'. Si alguna de estas variables puede proceder de datos proporcionados por el usuario, considere el uso de un procedimiento almacenado o una consulta SQL parametrizada en lugar de compilar la consulta con concatenaciones de cadenas.</Issue>
             </Message>
            </Messages>
           </Member>
           <Member Name="#SeleccionarMantenimientos(System.String)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="False">
            <Messages>
-            <Message TypeName="Revisar consultas SQL para comprobar si tienen vulnerabilidades de seguridad" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2018-11-22 11:44:10Z" FixCategory="DependsOnFix">
+            <Message TypeName="Revisar consultas SQL para comprobar si tienen vulnerabilidades de seguridad" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2018-11-23 12:23:57Z" FixCategory="DependsOnFix">
              <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="D:\PROYECTOS MANTENIMIENTO\MANTENIMIENTO\MANTENIMIENTO_V1.0\BaseDeDatos" File="BDMantenimientos.vb" Line="204">La cadena de consulta pasada a 'OleDbCommand.New(String, OleDbConnection)' en 'BDMantenimientos.SeleccionarMantenimientos(String)' podría contener las siguientes variables: 'Texto'. Si alguna de estas variables puede proceder de datos proporcionados por el usuario, considere el uso de un procedimiento almacenado o una consulta SQL parametrizada en lugar de compilar la consulta con concatenaciones de cadenas.</Issue>
             </Message>
            </Messages>
           </Member>
           <Member Name="#SeleccionarMantenimientosA(System.String)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="False">
            <Messages>
-            <Message TypeName="Revisar consultas SQL para comprobar si tienen vulnerabilidades de seguridad" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2018-11-22 11:44:10Z" FixCategory="DependsOnFix">
+            <Message TypeName="Revisar consultas SQL para comprobar si tienen vulnerabilidades de seguridad" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2018-11-23 12:23:57Z" FixCategory="DependsOnFix">
              <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="D:\PROYECTOS MANTENIMIENTO\MANTENIMIENTO\MANTENIMIENTO_V1.0\BaseDeDatos" File="BDMantenimientos.vb" Line="407">La cadena de consulta pasada a 'OleDbDataAdapter.New(String, OleDbConnection)' en 'BDMantenimientos.SeleccionarMantenimientosA(String)' podría contener las siguientes variables: 'Texto'. Si alguna de estas variables puede proceder de datos proporcionados por el usuario, considere el uso de un procedimiento almacenado o una consulta SQL parametrizada en lugar de compilar la consulta con concatenaciones de cadenas.</Issue>
             </Message>
            </Messages>
           </Member>
           <Member Name="#SeleccionarMantenimientosO(System.String)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="False">
            <Messages>
-            <Message TypeName="Revisar consultas SQL para comprobar si tienen vulnerabilidades de seguridad" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2018-11-22 11:44:10Z" FixCategory="DependsOnFix">
+            <Message TypeName="Revisar consultas SQL para comprobar si tienen vulnerabilidades de seguridad" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2018-11-23 12:23:57Z" FixCategory="DependsOnFix">
              <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="D:\PROYECTOS MANTENIMIENTO\MANTENIMIENTO\MANTENIMIENTO_V1.0\BaseDeDatos" File="BDMantenimientos.vb" Line="277">La cadena de consulta pasada a 'OdbcCommand.New(String, OdbcConnection)' en 'BDMantenimientos.SeleccionarMantenimientosO(String)' podría contener las siguientes variables: 'Texto'. Si alguna de estas variables puede proceder de datos proporcionados por el usuario, considere el uso de un procedimiento almacenado o una consulta SQL parametrizada en lugar de compilar la consulta con concatenaciones de cadenas.</Issue>
             </Message>
            </Messages>
           </Member>
           <Member Name="#SeleccionarMantenimientosX(System.String)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="False">
            <Messages>
-            <Message TypeName="Revisar consultas SQL para comprobar si tienen vulnerabilidades de seguridad" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2018-11-22 11:44:10Z" FixCategory="DependsOnFix">
+            <Message TypeName="Revisar consultas SQL para comprobar si tienen vulnerabilidades de seguridad" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2018-11-23 12:23:57Z" FixCategory="DependsOnFix">
              <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="D:\PROYECTOS MANTENIMIENTO\MANTENIMIENTO\MANTENIMIENTO_V1.0\BaseDeDatos" File="BDMantenimientos.vb" Line="350">La cadena de consulta pasada a 'OdbcCommand.New(String, OdbcConnection)' en 'BDMantenimientos.SeleccionarMantenimientosX(String)' podría contener las siguientes variables: 'Texto'. Si alguna de estas variables puede proceder de datos proporcionados por el usuario, considere el uso de un procedimiento almacenado o una consulta SQL parametrizada en lugar de compilar la consulta con concatenaciones de cadenas.</Issue>
             </Message>
            </Messages>
@@ -138,14 +138,14 @@
          <Members>
           <Member Name="#ObtenerClienteDeLicencia(System.String)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="False">
            <Messages>
-            <Message TypeName="Revisar consultas SQL para comprobar si tienen vulnerabilidades de seguridad" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2018-11-22 11:44:10Z" FixCategory="DependsOnFix">
+            <Message TypeName="Revisar consultas SQL para comprobar si tienen vulnerabilidades de seguridad" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2018-11-23 12:23:57Z" FixCategory="DependsOnFix">
              <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="D:\PROYECTOS MANTENIMIENTO\MANTENIMIENTO\MANTENIMIENTO_V1.0\BaseDeDatos" File="BDMovimientos.vb" Line="55">La cadena de consulta pasada a 'OleDbCommand.New(String, OleDbConnection)' en 'BDMovimientos.ObtenerClienteDeLicencia(String)' podría contener las siguientes variables: 'Licencia'. Si alguna de estas variables puede proceder de datos proporcionados por el usuario, considere el uso de un procedimiento almacenado o una consulta SQL parametrizada en lugar de compilar la consulta con concatenaciones de cadenas.</Issue>
             </Message>
            </Messages>
           </Member>
           <Member Name="#ObtenerMovimientos(System.Int64)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="False">
            <Messages>
-            <Message TypeName="Revisar consultas SQL para comprobar si tienen vulnerabilidades de seguridad" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2018-11-22 11:44:10Z" FixCategory="DependsOnFix">
+            <Message TypeName="Revisar consultas SQL para comprobar si tienen vulnerabilidades de seguridad" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2018-11-23 12:23:57Z" FixCategory="DependsOnFix">
              <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="D:\PROYECTOS MANTENIMIENTO\MANTENIMIENTO\MANTENIMIENTO_V1.0\BaseDeDatos" File="BDMovimientos.vb" Line="15">La cadena de consulta pasada a 'OleDbCommand.New(String, OleDbConnection)' en 'BDMovimientos.ObtenerMovimientos(Long)' podría contener las siguientes variables: 'Conversions.ToString(idCliente)'. Si alguna de estas variables puede proceder de datos proporcionados por el usuario, considere el uso de un procedimiento almacenado o una consulta SQL parametrizada en lugar de compilar la consulta con concatenaciones de cadenas.</Issue>
             </Message>
            </Messages>
@@ -156,14 +156,14 @@
          <Members>
           <Member Name="#ComprobarRepetidoPack(System.String)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="False">
            <Messages>
-            <Message TypeName="Revisar consultas SQL para comprobar si tienen vulnerabilidades de seguridad" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2018-11-22 11:44:10Z" FixCategory="DependsOnFix">
+            <Message TypeName="Revisar consultas SQL para comprobar si tienen vulnerabilidades de seguridad" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2018-11-23 12:23:57Z" FixCategory="DependsOnFix">
              <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="D:\PROYECTOS MANTENIMIENTO\MANTENIMIENTO\MANTENIMIENTO_V1.0\BaseDeDatos" File="BDPacks.vb" Line="246">La cadena de consulta pasada a 'OleDbCommand.New(String, OleDbConnection)' en 'BDPacks.ComprobarRepetidoPack(String)' podría contener las siguientes variables: 'Pack'. Si alguna de estas variables puede proceder de datos proporcionados por el usuario, considere el uso de un procedimiento almacenado o una consulta SQL parametrizada en lugar de compilar la consulta con concatenaciones de cadenas.</Issue>
             </Message>
            </Messages>
           </Member>
           <Member Name="#EliminarPack(MantEvolution.Pack)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="False">
            <Messages>
-            <Message TypeName="Revisar consultas SQL para comprobar si tienen vulnerabilidades de seguridad" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2018-11-22 11:44:10Z" FixCategory="DependsOnFix">
+            <Message TypeName="Revisar consultas SQL para comprobar si tienen vulnerabilidades de seguridad" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2018-11-23 12:23:57Z" FixCategory="DependsOnFix">
              <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="D:\PROYECTOS MANTENIMIENTO\MANTENIMIENTO\MANTENIMIENTO_V1.0\BaseDeDatos" File="BDPacks.vb" Line="221">La cadena de consulta pasada a 'OleDbCommand.CommandText.Set(String)' en 'BDPacks.EliminarPack(Pack)' podría contener las siguientes variables: 'Conversions.ToString(objPack.Id1)'. Si alguna de estas variables puede proceder de datos proporcionados por el usuario, considere el uso de un procedimiento almacenado o una consulta SQL parametrizada en lugar de compilar la consulta con concatenaciones de cadenas.</Issue>
              <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="D:\PROYECTOS MANTENIMIENTO\MANTENIMIENTO\MANTENIMIENTO_V1.0\BaseDeDatos" File="BDPacks.vb" Line="218">La cadena de consulta pasada a 'OleDbCommand.New(String, OleDbConnection)' en 'BDPacks.EliminarPack(Pack)' podría contener las siguientes variables: 'Conversions.ToString(objPack.Id1)'. Si alguna de estas variables puede proceder de datos proporcionados por el usuario, considere el uso de un procedimiento almacenado o una consulta SQL parametrizada en lugar de compilar la consulta con concatenaciones de cadenas.</Issue>
             </Message>
@@ -171,7 +171,7 @@
           </Member>
           <Member Name="#ModificarPack(MantEvolution.Pack)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="False">
            <Messages>
-            <Message TypeName="Revisar consultas SQL para comprobar si tienen vulnerabilidades de seguridad" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2018-11-22 11:44:10Z" FixCategory="DependsOnFix">
+            <Message TypeName="Revisar consultas SQL para comprobar si tienen vulnerabilidades de seguridad" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2018-11-23 12:23:57Z" FixCategory="DependsOnFix">
              <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="D:\PROYECTOS MANTENIMIENTO\MANTENIMIENTO\MANTENIMIENTO_V1.0\BaseDeDatos" File="BDPacks.vb" Line="186">La cadena de consulta pasada a 'OleDbCommand.CommandText.Set(String)' en 'BDPacks.ModificarPack(Pack)' podría contener las siguientes variables: 'Conversions.ToString(objPack.Id1)'. Si alguna de estas variables puede proceder de datos proporcionados por el usuario, considere el uso de un procedimiento almacenado o una consulta SQL parametrizada en lugar de compilar la consulta con concatenaciones de cadenas.</Issue>
              <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="D:\PROYECTOS MANTENIMIENTO\MANTENIMIENTO\MANTENIMIENTO_V1.0\BaseDeDatos" File="BDPacks.vb" Line="183">La cadena de consulta pasada a 'OleDbCommand.New(String, OleDbConnection)' en 'BDPacks.ModificarPack(Pack)' podría contener las siguientes variables: 'Conversions.ToString(objPack.Id1)'. Si alguna de estas variables puede proceder de datos proporcionados por el usuario, considere el uso de un procedimiento almacenado o una consulta SQL parametrizada en lugar de compilar la consulta con concatenaciones de cadenas.</Issue>
             </Message>
@@ -179,7 +179,7 @@
           </Member>
           <Member Name="#ObtenerUnPack(System.Int64)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="False">
            <Messages>
-            <Message TypeName="Revisar consultas SQL para comprobar si tienen vulnerabilidades de seguridad" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2018-11-22 11:44:10Z" FixCategory="DependsOnFix">
+            <Message TypeName="Revisar consultas SQL para comprobar si tienen vulnerabilidades de seguridad" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2018-11-23 12:23:57Z" FixCategory="DependsOnFix">
              <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="D:\PROYECTOS MANTENIMIENTO\MANTENIMIENTO\MANTENIMIENTO_V1.0\BaseDeDatos" File="BDPacks.vb" Line="61">La cadena de consulta pasada a 'OleDbCommand.New(String, OleDbConnection)' en 'BDPacks.ObtenerUnPack(Long)' podría contener las siguientes variables: 'Conversions.ToString(idPack)'. Si alguna de estas variables puede proceder de datos proporcionados por el usuario, considere el uso de un procedimiento almacenado o una consulta SQL parametrizada en lugar de compilar la consulta con concatenaciones de cadenas.</Issue>
             </Message>
            </Messages>
@@ -190,7 +190,7 @@
          <Members>
           <Member Name="#EliminarPantalla(MantEvolution.Pantalla)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="False">
            <Messages>
-            <Message TypeName="Revisar consultas SQL para comprobar si tienen vulnerabilidades de seguridad" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2018-11-22 11:44:10Z" FixCategory="DependsOnFix">
+            <Message TypeName="Revisar consultas SQL para comprobar si tienen vulnerabilidades de seguridad" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2018-11-23 12:23:57Z" FixCategory="DependsOnFix">
              <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="D:\PROYECTOS MANTENIMIENTO\MANTENIMIENTO\MANTENIMIENTO_V1.0\BaseDeDatos" File="BDPantallas.vb" Line="164">La cadena de consulta pasada a 'OleDbCommand.CommandText.Set(String)' en 'BDPantallas.EliminarPantalla(Pantalla)' podría contener las siguientes variables: 'Conversions.ToString(objPantalla.Id1)'. Si alguna de estas variables puede proceder de datos proporcionados por el usuario, considere el uso de un procedimiento almacenado o una consulta SQL parametrizada en lugar de compilar la consulta con concatenaciones de cadenas.</Issue>
              <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="D:\PROYECTOS MANTENIMIENTO\MANTENIMIENTO\MANTENIMIENTO_V1.0\BaseDeDatos" File="BDPantallas.vb" Line="161">La cadena de consulta pasada a 'OleDbCommand.New(String, OleDbConnection)' en 'BDPantallas.EliminarPantalla(Pantalla)' podría contener las siguientes variables: 'Conversions.ToString(objPantalla.Id1)'. Si alguna de estas variables puede proceder de datos proporcionados por el usuario, considere el uso de un procedimiento almacenado o una consulta SQL parametrizada en lugar de compilar la consulta con concatenaciones de cadenas.</Issue>
             </Message>
@@ -198,7 +198,7 @@
           </Member>
           <Member Name="#ModificarPantalla(MantEvolution.Pantalla)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="False">
            <Messages>
-            <Message TypeName="Revisar consultas SQL para comprobar si tienen vulnerabilidades de seguridad" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2018-11-22 11:44:10Z" FixCategory="DependsOnFix">
+            <Message TypeName="Revisar consultas SQL para comprobar si tienen vulnerabilidades de seguridad" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2018-11-23 12:23:57Z" FixCategory="DependsOnFix">
              <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="D:\PROYECTOS MANTENIMIENTO\MANTENIMIENTO\MANTENIMIENTO_V1.0\BaseDeDatos" File="BDPantallas.vb" Line="137">La cadena de consulta pasada a 'OleDbCommand.CommandText.Set(String)' en 'BDPantallas.ModificarPantalla(Pantalla)' podría contener las siguientes variables: 'Conversions.ToString(objPantalla.Id1)'. Si alguna de estas variables puede proceder de datos proporcionados por el usuario, considere el uso de un procedimiento almacenado o una consulta SQL parametrizada en lugar de compilar la consulta con concatenaciones de cadenas.</Issue>
              <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="D:\PROYECTOS MANTENIMIENTO\MANTENIMIENTO\MANTENIMIENTO_V1.0\BaseDeDatos" File="BDPantallas.vb" Line="134">La cadena de consulta pasada a 'OleDbCommand.New(String, OleDbConnection)' en 'BDPantallas.ModificarPantalla(Pantalla)' podría contener las siguientes variables: 'Conversions.ToString(objPantalla.Id1)'. Si alguna de estas variables puede proceder de datos proporcionados por el usuario, considere el uso de un procedimiento almacenado o una consulta SQL parametrizada en lugar de compilar la consulta con concatenaciones de cadenas.</Issue>
             </Message>
@@ -206,14 +206,14 @@
           </Member>
           <Member Name="#ObtenerIdUnaPantalla(System.Int64)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="False">
            <Messages>
-            <Message TypeName="Revisar consultas SQL para comprobar si tienen vulnerabilidades de seguridad" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2018-11-22 11:44:10Z" FixCategory="DependsOnFix">
+            <Message TypeName="Revisar consultas SQL para comprobar si tienen vulnerabilidades de seguridad" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2018-11-23 12:23:57Z" FixCategory="DependsOnFix">
              <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="D:\PROYECTOS MANTENIMIENTO\MANTENIMIENTO\MANTENIMIENTO_V1.0\BaseDeDatos" File="BDPantallas.vb" Line="71">La cadena de consulta pasada a 'OleDbCommand.New(String, OleDbConnection)' en 'BDPantallas.ObtenerIdUnaPantalla(Long)' podría contener las siguientes variables: 'Conversions.ToString(Pantalla)'. Si alguna de estas variables puede proceder de datos proporcionados por el usuario, considere el uso de un procedimiento almacenado o una consulta SQL parametrizada en lugar de compilar la consulta con concatenaciones de cadenas.</Issue>
             </Message>
            </Messages>
           </Member>
           <Member Name="#ObtenerUnaPantalla(System.Int64)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="False">
            <Messages>
-            <Message TypeName="Revisar consultas SQL para comprobar si tienen vulnerabilidades de seguridad" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2018-11-22 11:44:10Z" FixCategory="DependsOnFix">
+            <Message TypeName="Revisar consultas SQL para comprobar si tienen vulnerabilidades de seguridad" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2018-11-23 12:23:57Z" FixCategory="DependsOnFix">
              <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="D:\PROYECTOS MANTENIMIENTO\MANTENIMIENTO\MANTENIMIENTO_V1.0\BaseDeDatos" File="BDPantallas.vb" Line="42">La cadena de consulta pasada a 'OleDbCommand.New(String, OleDbConnection)' en 'BDPantallas.ObtenerUnaPantalla(Long)' podría contener las siguientes variables: 'Conversions.ToString(idPantalla)'. Si alguna de estas variables puede proceder de datos proporcionados por el usuario, considere el uso de un procedimiento almacenado o una consulta SQL parametrizada en lugar de compilar la consulta con concatenaciones de cadenas.</Issue>
             </Message>
            </Messages>
@@ -224,7 +224,7 @@
          <Members>
           <Member Name="#ObtenerPedidosAño(System.String)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="False">
            <Messages>
-            <Message TypeName="Revisar consultas SQL para comprobar si tienen vulnerabilidades de seguridad" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2018-11-22 11:44:10Z" FixCategory="DependsOnFix">
+            <Message TypeName="Revisar consultas SQL para comprobar si tienen vulnerabilidades de seguridad" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2018-11-23 12:23:57Z" FixCategory="DependsOnFix">
              <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="D:\PROYECTOS MANTENIMIENTO\MANTENIMIENTO\MANTENIMIENTO_V1.0\BaseDeDatos" File="BDPedidos.vb" Line="28">La cadena de consulta pasada a 'OleDbDataAdapter.New(String, OleDbConnection)' en 'BDPedidos.ObtenerPedidosAño(String)' podría contener las siguientes variables: 'Año'. Si alguna de estas variables puede proceder de datos proporcionados por el usuario, considere el uso de un procedimiento almacenado o una consulta SQL parametrizada en lugar de compilar la consulta con concatenaciones de cadenas.</Issue>
             </Message>
            </Messages>
@@ -235,7 +235,7 @@
          <Members>
           <Member Name="#EliminarPermiso(MantEvolution.Permiso)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="False">
            <Messages>
-            <Message TypeName="Revisar consultas SQL para comprobar si tienen vulnerabilidades de seguridad" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2018-11-22 11:44:10Z" FixCategory="DependsOnFix">
+            <Message TypeName="Revisar consultas SQL para comprobar si tienen vulnerabilidades de seguridad" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2018-11-23 12:23:57Z" FixCategory="DependsOnFix">
              <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="D:\PROYECTOS MANTENIMIENTO\MANTENIMIENTO\MANTENIMIENTO_V1.0\BaseDeDatos" File="BDPermisos.vb" Line="206">La cadena de consulta pasada a 'OleDbCommand.CommandText.Set(String)' en 'BDPermisos.EliminarPermiso(Permiso)' podría contener las siguientes variables: 'Conversions.ToString(objPermiso.Id1)'. Si alguna de estas variables puede proceder de datos proporcionados por el usuario, considere el uso de un procedimiento almacenado o una consulta SQL parametrizada en lugar de compilar la consulta con concatenaciones de cadenas.</Issue>
              <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="D:\PROYECTOS MANTENIMIENTO\MANTENIMIENTO\MANTENIMIENTO_V1.0\BaseDeDatos" File="BDPermisos.vb" Line="203">La cadena de consulta pasada a 'OleDbCommand.New(String, OleDbConnection)' en 'BDPermisos.EliminarPermiso(Permiso)' podría contener las siguientes variables: 'Conversions.ToString(objPermiso.Id1)'. Si alguna de estas variables puede proceder de datos proporcionados por el usuario, considere el uso de un procedimiento almacenado o una consulta SQL parametrizada en lugar de compilar la consulta con concatenaciones de cadenas.</Issue>
             </Message>
@@ -243,7 +243,7 @@
           </Member>
           <Member Name="#ModificarPermiso(MantEvolution.Permiso)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="False">
            <Messages>
-            <Message TypeName="Revisar consultas SQL para comprobar si tienen vulnerabilidades de seguridad" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2018-11-22 11:44:10Z" FixCategory="DependsOnFix">
+            <Message TypeName="Revisar consultas SQL para comprobar si tienen vulnerabilidades de seguridad" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2018-11-23 12:23:57Z" FixCategory="DependsOnFix">
              <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="D:\PROYECTOS MANTENIMIENTO\MANTENIMIENTO\MANTENIMIENTO_V1.0\BaseDeDatos" File="BDPermisos.vb" Line="180">La cadena de consulta pasada a 'OleDbCommand.CommandText.Set(String)' en 'BDPermisos.ModificarPermiso(Permiso)' podría contener las siguientes variables: 'Conversions.ToString(objPermiso.Id1)'. Si alguna de estas variables puede proceder de datos proporcionados por el usuario, considere el uso de un procedimiento almacenado o una consulta SQL parametrizada en lugar de compilar la consulta con concatenaciones de cadenas.</Issue>
              <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="D:\PROYECTOS MANTENIMIENTO\MANTENIMIENTO\MANTENIMIENTO_V1.0\BaseDeDatos" File="BDPermisos.vb" Line="177">La cadena de consulta pasada a 'OleDbCommand.New(String, OleDbConnection)' en 'BDPermisos.ModificarPermiso(Permiso)' podría contener las siguientes variables: 'Conversions.ToString(objPermiso.Id1)'. Si alguna de estas variables puede proceder de datos proporcionados por el usuario, considere el uso de un procedimiento almacenado o una consulta SQL parametrizada en lugar de compilar la consulta con concatenaciones de cadenas.</Issue>
             </Message>
@@ -251,21 +251,21 @@
           </Member>
           <Member Name="#ObtenerPermisos(System.Int64,System.Int64)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="False">
            <Messages>
-            <Message TypeName="Revisar consultas SQL para comprobar si tienen vulnerabilidades de seguridad" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2018-11-22 11:44:10Z" FixCategory="DependsOnFix">
+            <Message TypeName="Revisar consultas SQL para comprobar si tienen vulnerabilidades de seguridad" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2018-11-23 12:23:57Z" FixCategory="DependsOnFix">
              <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="D:\PROYECTOS MANTENIMIENTO\MANTENIMIENTO\MANTENIMIENTO_V1.0\BaseDeDatos" File="BDPermisos.vb" Line="109">La cadena de consulta pasada a 'OleDbCommand.New(String, OleDbConnection)' en 'BDPermisos.ObtenerPermisos(Long, Long)' podría contener las siguientes variables: 'Conversions.ToString(IdGrupo)', 'Conversions.ToString(IdPantalla)'. Si alguna de estas variables puede proceder de datos proporcionados por el usuario, considere el uso de un procedimiento almacenado o una consulta SQL parametrizada en lugar de compilar la consulta con concatenaciones de cadenas.</Issue>
             </Message>
            </Messages>
           </Member>
           <Member Name="#ObtenerPermisosGrupo(System.Int64)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="False">
            <Messages>
-            <Message TypeName="Revisar consultas SQL para comprobar si tienen vulnerabilidades de seguridad" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2018-11-22 11:44:10Z" FixCategory="DependsOnFix">
+            <Message TypeName="Revisar consultas SQL para comprobar si tienen vulnerabilidades de seguridad" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2018-11-23 12:23:57Z" FixCategory="DependsOnFix">
              <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="D:\PROYECTOS MANTENIMIENTO\MANTENIMIENTO\MANTENIMIENTO_V1.0\BaseDeDatos" File="BDPermisos.vb" Line="45">La cadena de consulta pasada a 'OleDbCommand.New(String, OleDbConnection)' en 'BDPermisos.ObtenerPermisosGrupo(Long)' podría contener las siguientes variables: 'Conversions.ToString(IdGrupo)'. Si alguna de estas variables puede proceder de datos proporcionados por el usuario, considere el uso de un procedimiento almacenado o una consulta SQL parametrizada en lugar de compilar la consulta con concatenaciones de cadenas.</Issue>
             </Message>
            </Messages>
           </Member>
           <Member Name="#ObtenerPermisosPantalla(System.Int64,System.Int64)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="False">
            <Messages>
-            <Message TypeName="Revisar consultas SQL para comprobar si tienen vulnerabilidades de seguridad" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2018-11-22 11:44:10Z" FixCategory="DependsOnFix">
+            <Message TypeName="Revisar consultas SQL para comprobar si tienen vulnerabilidades de seguridad" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2018-11-23 12:23:57Z" FixCategory="DependsOnFix">
              <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="D:\PROYECTOS MANTENIMIENTO\MANTENIMIENTO\MANTENIMIENTO_V1.0\BaseDeDatos" File="BDPermisos.vb" Line="77">La cadena de consulta pasada a 'OleDbCommand.New(String, OleDbConnection)' en 'BDPermisos.ObtenerPermisosPantalla(Long, Long)' podría contener las siguientes variables: 'Conversions.ToString(IdGrupo)', 'Conversions.ToString(IdPantalla)'. Si alguna de estas variables puede proceder de datos proporcionados por el usuario, considere el uso de un procedimiento almacenado o una consulta SQL parametrizada en lugar de compilar la consulta con concatenaciones de cadenas.</Issue>
             </Message>
            </Messages>
@@ -276,14 +276,14 @@
          <Members>
           <Member Name="#ComprobarRepetidoProducto(System.String)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="False">
            <Messages>
-            <Message TypeName="Revisar consultas SQL para comprobar si tienen vulnerabilidades de seguridad" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2018-11-22 11:44:10Z" FixCategory="DependsOnFix">
+            <Message TypeName="Revisar consultas SQL para comprobar si tienen vulnerabilidades de seguridad" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2018-11-23 12:23:57Z" FixCategory="DependsOnFix">
              <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="D:\PROYECTOS MANTENIMIENTO\MANTENIMIENTO\MANTENIMIENTO_V1.0\BaseDeDatos" File="BDProductos.vb" Line="266">La cadena de consulta pasada a 'OleDbCommand.New(String, OleDbConnection)' en 'BDProductos.ComprobarRepetidoProducto(String)' podría contener las siguientes variables: 'Tipo'. Si alguna de estas variables puede proceder de datos proporcionados por el usuario, considere el uso de un procedimiento almacenado o una consulta SQL parametrizada en lugar de compilar la consulta con concatenaciones de cadenas.</Issue>
             </Message>
            </Messages>
           </Member>
           <Member Name="#EliminarProducto(MantEvolution.Producto)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="False">
            <Messages>
-            <Message TypeName="Revisar consultas SQL para comprobar si tienen vulnerabilidades de seguridad" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2018-11-22 11:44:10Z" FixCategory="DependsOnFix">
+            <Message TypeName="Revisar consultas SQL para comprobar si tienen vulnerabilidades de seguridad" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2018-11-23 12:23:57Z" FixCategory="DependsOnFix">
              <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="D:\PROYECTOS MANTENIMIENTO\MANTENIMIENTO\MANTENIMIENTO_V1.0\BaseDeDatos" File="BDProductos.vb" Line="241">La cadena de consulta pasada a 'OleDbCommand.CommandText.Set(String)' en 'BDProductos.EliminarProducto(Producto)' podría contener las siguientes variables: 'Conversions.ToString(objProducto.Id1)'. Si alguna de estas variables puede proceder de datos proporcionados por el usuario, considere el uso de un procedimiento almacenado o una consulta SQL parametrizada en lugar de compilar la consulta con concatenaciones de cadenas.</Issue>
              <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="D:\PROYECTOS MANTENIMIENTO\MANTENIMIENTO\MANTENIMIENTO_V1.0\BaseDeDatos" File="BDProductos.vb" Line="238">La cadena de consulta pasada a 'OleDbCommand.New(String, OleDbConnection)' en 'BDProductos.EliminarProducto(Producto)' podría contener las siguientes variables: 'Conversions.ToString(objProducto.Id1)'. Si alguna de estas variables puede proceder de datos proporcionados por el usuario, considere el uso de un procedimiento almacenado o una consulta SQL parametrizada en lugar de compilar la consulta con concatenaciones de cadenas.</Issue>
             </Message>
@@ -291,7 +291,7 @@
           </Member>
           <Member Name="#ModificarProducto(MantEvolution.Producto)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="False">
            <Messages>
-            <Message TypeName="Revisar consultas SQL para comprobar si tienen vulnerabilidades de seguridad" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2018-11-22 11:44:10Z" FixCategory="DependsOnFix">
+            <Message TypeName="Revisar consultas SQL para comprobar si tienen vulnerabilidades de seguridad" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2018-11-23 12:23:57Z" FixCategory="DependsOnFix">
              <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="D:\PROYECTOS MANTENIMIENTO\MANTENIMIENTO\MANTENIMIENTO_V1.0\BaseDeDatos" File="BDProductos.vb" Line="207">La cadena de consulta pasada a 'OleDbCommand.CommandText.Set(String)' en 'BDProductos.ModificarProducto(Producto)' podría contener las siguientes variables: 'Conversions.ToString(objProducto.Id1)'. Si alguna de estas variables puede proceder de datos proporcionados por el usuario, considere el uso de un procedimiento almacenado o una consulta SQL parametrizada en lugar de compilar la consulta con concatenaciones de cadenas.</Issue>
              <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="D:\PROYECTOS MANTENIMIENTO\MANTENIMIENTO\MANTENIMIENTO_V1.0\BaseDeDatos" File="BDProductos.vb" Line="204">La cadena de consulta pasada a 'OleDbCommand.New(String, OleDbConnection)' en 'BDProductos.ModificarProducto(Producto)' podría contener las siguientes variables: 'Conversions.ToString(objProducto.Id1)'. Si alguna de estas variables puede proceder de datos proporcionados por el usuario, considere el uso de un procedimiento almacenado o una consulta SQL parametrizada en lugar de compilar la consulta con concatenaciones de cadenas.</Issue>
             </Message>
@@ -299,14 +299,14 @@
           </Member>
           <Member Name="#ObtenerProductosTipo(System.Int64)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="False">
            <Messages>
-            <Message TypeName="Revisar consultas SQL para comprobar si tienen vulnerabilidades de seguridad" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2018-11-22 11:44:10Z" FixCategory="DependsOnFix">
+            <Message TypeName="Revisar consultas SQL para comprobar si tienen vulnerabilidades de seguridad" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2018-11-23 12:23:57Z" FixCategory="DependsOnFix">
              <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="D:\PROYECTOS MANTENIMIENTO\MANTENIMIENTO\MANTENIMIENTO_V1.0\BaseDeDatos" File="BDProductos.vb" Line="65">La cadena de consulta pasada a 'OleDbCommand.New(String, OleDbConnection)' en 'BDProductos.ObtenerProductosTipo(Long)' podría contener las siguientes variables: 'Conversions.ToString(tipo)'. Si alguna de estas variables puede proceder de datos proporcionados por el usuario, considere el uso de un procedimiento almacenado o una consulta SQL parametrizada en lugar de compilar la consulta con concatenaciones de cadenas.</Issue>
             </Message>
            </Messages>
           </Member>
           <Member Name="#ObtenerUnProducto(System.Int64)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="False">
            <Messages>
-            <Message TypeName="Revisar consultas SQL para comprobar si tienen vulnerabilidades de seguridad" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2018-11-22 11:44:10Z" FixCategory="DependsOnFix">
+            <Message TypeName="Revisar consultas SQL para comprobar si tienen vulnerabilidades de seguridad" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2018-11-23 12:23:57Z" FixCategory="DependsOnFix">
              <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="D:\PROYECTOS MANTENIMIENTO\MANTENIMIENTO\MANTENIMIENTO_V1.0\BaseDeDatos" File="BDProductos.vb" Line="114">La cadena de consulta pasada a 'OleDbCommand.New(String, OleDbConnection)' en 'BDProductos.ObtenerUnProducto(Long)' podría contener las siguientes variables: 'Conversions.ToString(idProducto)'. Si alguna de estas variables puede proceder de datos proporcionados por el usuario, considere el uso de un procedimiento almacenado o una consulta SQL parametrizada en lugar de compilar la consulta con concatenaciones de cadenas.</Issue>
             </Message>
            </Messages>
@@ -317,56 +317,56 @@
          <Members>
           <Member Name="#ObtenerClientesPack(System.Int64)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="False">
            <Messages>
-            <Message TypeName="Revisar consultas SQL para comprobar si tienen vulnerabilidades de seguridad" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2018-11-22 11:44:10Z" FixCategory="DependsOnFix">
+            <Message TypeName="Revisar consultas SQL para comprobar si tienen vulnerabilidades de seguridad" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2018-11-23 12:23:57Z" FixCategory="DependsOnFix">
              <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="D:\PROYECTOS MANTENIMIENTO\MANTENIMIENTO\MANTENIMIENTO_V1.0\BaseDeDatos" File="BDProductosCliente.vb" Line="379">La cadena de consulta pasada a 'OleDbCommand.New(String, OleDbConnection)' en 'BDProductosCliente.ObtenerClientesPack(Long)' podría contener las siguientes variables: 'Conversions.ToString(Pack)'. Si alguna de estas variables puede proceder de datos proporcionados por el usuario, considere el uso de un procedimiento almacenado o una consulta SQL parametrizada en lugar de compilar la consulta con concatenaciones de cadenas.</Issue>
             </Message>
            </Messages>
           </Member>
           <Member Name="#ObtenerClientesProducto(System.Int64)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="False">
            <Messages>
-            <Message TypeName="Revisar consultas SQL para comprobar si tienen vulnerabilidades de seguridad" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2018-11-22 11:44:10Z" FixCategory="DependsOnFix">
+            <Message TypeName="Revisar consultas SQL para comprobar si tienen vulnerabilidades de seguridad" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2018-11-23 12:23:57Z" FixCategory="DependsOnFix">
              <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="D:\PROYECTOS MANTENIMIENTO\MANTENIMIENTO\MANTENIMIENTO_V1.0\BaseDeDatos" File="BDProductosCliente.vb" Line="306">La cadena de consulta pasada a 'OleDbCommand.New(String, OleDbConnection)' en 'BDProductosCliente.ObtenerClientesProducto(Long)' podría contener las siguientes variables: 'Conversions.ToString(Producto)'. Si alguna de estas variables puede proceder de datos proporcionados por el usuario, considere el uso de un procedimiento almacenado o una consulta SQL parametrizada en lugar de compilar la consulta con concatenaciones de cadenas.</Issue>
             </Message>
            </Messages>
           </Member>
           <Member Name="#ObtenerClientesProductoTipo(System.Int64)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="False">
            <Messages>
-            <Message TypeName="Revisar consultas SQL para comprobar si tienen vulnerabilidades de seguridad" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2018-11-22 11:44:10Z" FixCategory="DependsOnFix">
+            <Message TypeName="Revisar consultas SQL para comprobar si tienen vulnerabilidades de seguridad" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2018-11-23 12:23:57Z" FixCategory="DependsOnFix">
              <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="D:\PROYECTOS MANTENIMIENTO\MANTENIMIENTO\MANTENIMIENTO_V1.0\BaseDeDatos" File="BDProductosCliente.vb" Line="193">La cadena de consulta pasada a 'OleDbCommand.New(String, OleDbConnection)' en 'BDProductosCliente.ObtenerClientesProductoTipo(Long)' podría contener las siguientes variables: 'Conversions.ToString(Tipo)'. Si alguna de estas variables puede proceder de datos proporcionados por el usuario, considere el uso de un procedimiento almacenado o una consulta SQL parametrizada en lugar de compilar la consulta con concatenaciones de cadenas.</Issue>
             </Message>
            </Messages>
           </Member>
           <Member Name="#ObtenerProductosCliente(System.Int64)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="False">
            <Messages>
-            <Message TypeName="Revisar consultas SQL para comprobar si tienen vulnerabilidades de seguridad" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2018-11-22 11:44:10Z" FixCategory="DependsOnFix">
+            <Message TypeName="Revisar consultas SQL para comprobar si tienen vulnerabilidades de seguridad" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2018-11-23 12:23:57Z" FixCategory="DependsOnFix">
              <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="D:\PROYECTOS MANTENIMIENTO\MANTENIMIENTO\MANTENIMIENTO_V1.0\BaseDeDatos" File="BDProductosCliente.vb" Line="20">La cadena de consulta pasada a 'OleDbCommand.New(String, OleDbConnection)' en 'BDProductosCliente.ObtenerProductosCliente(Long)' podría contener las siguientes variables: 'Conversions.ToString(idCliente)'. Si alguna de estas variables puede proceder de datos proporcionados por el usuario, considere el uso de un procedimiento almacenado o una consulta SQL parametrizada en lugar de compilar la consulta con concatenaciones de cadenas.</Issue>
             </Message>
            </Messages>
           </Member>
           <Member Name="#ObtenerProductosClientePack(System.Int64)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="False">
            <Messages>
-            <Message TypeName="Revisar consultas SQL para comprobar si tienen vulnerabilidades de seguridad" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2018-11-22 11:44:10Z" FixCategory="DependsOnFix">
+            <Message TypeName="Revisar consultas SQL para comprobar si tienen vulnerabilidades de seguridad" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2018-11-23 12:23:57Z" FixCategory="DependsOnFix">
              <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="D:\PROYECTOS MANTENIMIENTO\MANTENIMIENTO\MANTENIMIENTO_V1.0\BaseDeDatos" File="BDProductosCliente.vb" Line="596">La cadena de consulta pasada a 'OleDbCommand.New(String, OleDbConnection)' en 'BDProductosCliente.ObtenerProductosClientePack(Long)' podría contener las siguientes variables: 'Conversions.ToString(pack)'. Si alguna de estas variables puede proceder de datos proporcionados por el usuario, considere el uso de un procedimiento almacenado o una consulta SQL parametrizada en lugar de compilar la consulta con concatenaciones de cadenas.</Issue>
             </Message>
            </Messages>
           </Member>
           <Member Name="#ObtenerProductosClienteProducto(System.Int64)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="False">
            <Messages>
-            <Message TypeName="Revisar consultas SQL para comprobar si tienen vulnerabilidades de seguridad" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2018-11-22 11:44:10Z" FixCategory="DependsOnFix">
+            <Message TypeName="Revisar consultas SQL para comprobar si tienen vulnerabilidades de seguridad" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2018-11-23 12:23:57Z" FixCategory="DependsOnFix">
              <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="D:\PROYECTOS MANTENIMIENTO\MANTENIMIENTO\MANTENIMIENTO_V1.0\BaseDeDatos" File="BDProductosCliente.vb" Line="506">La cadena de consulta pasada a 'OleDbCommand.New(String, OleDbConnection)' en 'BDProductosCliente.ObtenerProductosClienteProducto(Long)' podría contener las siguientes variables: 'Conversions.ToString(producto)'. Si alguna de estas variables puede proceder de datos proporcionados por el usuario, considere el uso de un procedimiento almacenado o una consulta SQL parametrizada en lugar de compilar la consulta con concatenaciones de cadenas.</Issue>
             </Message>
            </Messages>
           </Member>
           <Member Name="#ObtenerProductosClienteTipo(System.Int64)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="False">
            <Messages>
-            <Message TypeName="Revisar consultas SQL para comprobar si tienen vulnerabilidades de seguridad" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2018-11-22 11:44:10Z" FixCategory="DependsOnFix">
+            <Message TypeName="Revisar consultas SQL para comprobar si tienen vulnerabilidades de seguridad" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2018-11-23 12:23:57Z" FixCategory="DependsOnFix">
              <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="D:\PROYECTOS MANTENIMIENTO\MANTENIMIENTO\MANTENIMIENTO_V1.0\BaseDeDatos" File="BDProductosCliente.vb" Line="416">La cadena de consulta pasada a 'OleDbCommand.New(String, OleDbConnection)' en 'BDProductosCliente.ObtenerProductosClienteTipo(Long)' podría contener las siguientes variables: 'Conversions.ToString(tipo)'. Si alguna de estas variables puede proceder de datos proporcionados por el usuario, considere el uso de un procedimiento almacenado o una consulta SQL parametrizada en lugar de compilar la consulta con concatenaciones de cadenas.</Issue>
             </Message>
            </Messages>
           </Member>
           <Member Name="#ObtenerProductosTotalesTipo(System.Int64)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="False">
            <Messages>
-            <Message TypeName="Revisar consultas SQL para comprobar si tienen vulnerabilidades de seguridad" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2018-11-22 11:44:10Z" FixCategory="DependsOnFix">
+            <Message TypeName="Revisar consultas SQL para comprobar si tienen vulnerabilidades de seguridad" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2018-11-23 12:23:57Z" FixCategory="DependsOnFix">
              <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="D:\PROYECTOS MANTENIMIENTO\MANTENIMIENTO\MANTENIMIENTO_V1.0\BaseDeDatos" File="BDProductosCliente.vb" Line="96">La cadena de consulta pasada a 'OleDbCommand.New(String, OleDbConnection)' en 'BDProductosCliente.ObtenerProductosTotalesTipo(Long)' podría contener las siguientes variables: 'Conversions.ToString(Tipo)'. Si alguna de estas variables puede proceder de datos proporcionados por el usuario, considere el uso de un procedimiento almacenado o una consulta SQL parametrizada en lugar de compilar la consulta con concatenaciones de cadenas.</Issue>
             </Message>
            </Messages>
@@ -377,7 +377,7 @@
          <Members>
           <Member Name="#obtenerUnaProvincia(System.Int64)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="False">
            <Messages>
-            <Message TypeName="Revisar consultas SQL para comprobar si tienen vulnerabilidades de seguridad" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2018-11-22 11:44:10Z" FixCategory="DependsOnFix">
+            <Message TypeName="Revisar consultas SQL para comprobar si tienen vulnerabilidades de seguridad" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2018-11-23 12:23:57Z" FixCategory="DependsOnFix">
              <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="D:\PROYECTOS MANTENIMIENTO\MANTENIMIENTO\MANTENIMIENTO_V1.0\BaseDeDatos" File="BDProvincias.vb" Line="48">La cadena de consulta pasada a 'OleDbCommand.New(String, OleDbConnection)' en 'BDProvincias.obtenerUnaProvincia(Long)' podría contener las siguientes variables: 'Conversions.ToString(IdProvincia)'. Si alguna de estas variables puede proceder de datos proporcionados por el usuario, considere el uso de un procedimiento almacenado o una consulta SQL parametrizada en lugar de compilar la consulta con concatenaciones de cadenas.</Issue>
             </Message>
            </Messages>
@@ -388,7 +388,7 @@
          <Members>
           <Member Name="#ModificarTarea(MantEvolution.Tarea)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="False">
            <Messages>
-            <Message TypeName="Revisar consultas SQL para comprobar si tienen vulnerabilidades de seguridad" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2018-11-22 11:44:10Z" FixCategory="DependsOnFix">
+            <Message TypeName="Revisar consultas SQL para comprobar si tienen vulnerabilidades de seguridad" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2018-11-23 12:23:57Z" FixCategory="DependsOnFix">
              <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="D:\PROYECTOS MANTENIMIENTO\MANTENIMIENTO\MANTENIMIENTO_V1.0\BaseDeDatos" File="BDTareas.vb" Line="140">La cadena de consulta pasada a 'OleDbCommand.CommandText.Set(String)' en 'BDTareas.ModificarTarea(Tarea)' podría contener las siguientes variables: 'Conversions.ToString(objTarea.Id1)'. Si alguna de estas variables puede proceder de datos proporcionados por el usuario, considere el uso de un procedimiento almacenado o una consulta SQL parametrizada en lugar de compilar la consulta con concatenaciones de cadenas.</Issue>
              <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="D:\PROYECTOS MANTENIMIENTO\MANTENIMIENTO\MANTENIMIENTO_V1.0\BaseDeDatos" File="BDTareas.vb" Line="137">La cadena de consulta pasada a 'OleDbCommand.New(String, OleDbConnection)' en 'BDTareas.ModificarTarea(Tarea)' podría contener las siguientes variables: 'Conversions.ToString(objTarea.Id1)'. Si alguna de estas variables puede proceder de datos proporcionados por el usuario, considere el uso de un procedimiento almacenado o una consulta SQL parametrizada en lugar de compilar la consulta con concatenaciones de cadenas.</Issue>
             </Message>
@@ -396,7 +396,7 @@
           </Member>
           <Member Name="#ObtenerTareasActivas(System.Int64)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="False">
            <Messages>
-            <Message TypeName="Revisar consultas SQL para comprobar si tienen vulnerabilidades de seguridad" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2018-11-22 11:44:10Z" FixCategory="DependsOnFix">
+            <Message TypeName="Revisar consultas SQL para comprobar si tienen vulnerabilidades de seguridad" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2018-11-23 12:23:57Z" FixCategory="DependsOnFix">
              <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="D:\PROYECTOS MANTENIMIENTO\MANTENIMIENTO\MANTENIMIENTO_V1.0\BaseDeDatos" File="BDTareas.vb" Line="20">La cadena de consulta pasada a 'OleDbCommand.New(String, OleDbConnection)' en 'BDTareas.ObtenerTareasActivas(Long)' podría contener las siguientes variables: 'Conversions.ToString(idTecnico)'. Si alguna de estas variables puede proceder de datos proporcionados por el usuario, considere el uso de un procedimiento almacenado o una consulta SQL parametrizada en lugar de compilar la consulta con concatenaciones de cadenas.</Issue>
             </Message>
            </Messages>
@@ -407,7 +407,7 @@
          <Members>
           <Member Name="#ObtenerUnTrabajo(System.Int64)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="False">
            <Messages>
-            <Message TypeName="Revisar consultas SQL para comprobar si tienen vulnerabilidades de seguridad" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2018-11-22 11:44:10Z" FixCategory="DependsOnFix">
+            <Message TypeName="Revisar consultas SQL para comprobar si tienen vulnerabilidades de seguridad" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2018-11-23 12:23:57Z" FixCategory="DependsOnFix">
              <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="D:\PROYECTOS MANTENIMIENTO\MANTENIMIENTO\MANTENIMIENTO_V1.0\BaseDeDatos" File="BDTrabajos.vb" Line="76">La cadena de consulta pasada a 'OleDbCommand.New(String, OleDbConnection)' en 'BDTrabajos.ObtenerUnTrabajo(Long)' podría contener las siguientes variables: 'Conversions.ToString(IdTrabajo)'. Si alguna de estas variables puede proceder de datos proporcionados por el usuario, considere el uso de un procedimiento almacenado o una consulta SQL parametrizada en lugar de compilar la consulta con concatenaciones de cadenas.</Issue>
             </Message>
            </Messages>
@@ -418,14 +418,14 @@
          <Members>
           <Member Name="#ComprobarRepetidoUsuario(System.String)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="False">
            <Messages>
-            <Message TypeName="Revisar consultas SQL para comprobar si tienen vulnerabilidades de seguridad" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2018-11-22 11:44:10Z" FixCategory="DependsOnFix">
+            <Message TypeName="Revisar consultas SQL para comprobar si tienen vulnerabilidades de seguridad" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2018-11-23 12:23:57Z" FixCategory="DependsOnFix">
              <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="D:\PROYECTOS MANTENIMIENTO\MANTENIMIENTO\MANTENIMIENTO_V1.0\BaseDeDatos" File="BDUsuarios.vb" Line="223">La cadena de consulta pasada a 'OleDbCommand.New(String, OleDbConnection)' en 'BDUsuarios.ComprobarRepetidoUsuario(String)' podría contener las siguientes variables: 'Usuario'. Si alguna de estas variables puede proceder de datos proporcionados por el usuario, considere el uso de un procedimiento almacenado o una consulta SQL parametrizada en lugar de compilar la consulta con concatenaciones de cadenas.</Issue>
             </Message>
            </Messages>
           </Member>
           <Member Name="#EliminarUsuario(MantEvolution.Usuario)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="False">
            <Messages>
-            <Message TypeName="Revisar consultas SQL para comprobar si tienen vulnerabilidades de seguridad" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2018-11-22 11:44:10Z" FixCategory="DependsOnFix">
+            <Message TypeName="Revisar consultas SQL para comprobar si tienen vulnerabilidades de seguridad" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2018-11-23 12:23:57Z" FixCategory="DependsOnFix">
              <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="D:\PROYECTOS MANTENIMIENTO\MANTENIMIENTO\MANTENIMIENTO_V1.0\BaseDeDatos" File="BDUsuarios.vb" Line="197">La cadena de consulta pasada a 'OleDbCommand.CommandText.Set(String)' en 'BDUsuarios.EliminarUsuario(Usuario)' podría contener las siguientes variables: 'Conversions.ToString(objUsuario.Id1)'. Si alguna de estas variables puede proceder de datos proporcionados por el usuario, considere el uso de un procedimiento almacenado o una consulta SQL parametrizada en lugar de compilar la consulta con concatenaciones de cadenas.</Issue>
              <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="D:\PROYECTOS MANTENIMIENTO\MANTENIMIENTO\MANTENIMIENTO_V1.0\BaseDeDatos" File="BDUsuarios.vb" Line="194">La cadena de consulta pasada a 'OleDbCommand.New(String, OleDbConnection)' en 'BDUsuarios.EliminarUsuario(Usuario)' podría contener las siguientes variables: 'Conversions.ToString(objUsuario.Id1)'. Si alguna de estas variables puede proceder de datos proporcionados por el usuario, considere el uso de un procedimiento almacenado o una consulta SQL parametrizada en lugar de compilar la consulta con concatenaciones de cadenas.</Issue>
             </Message>
@@ -433,21 +433,21 @@
           </Member>
           <Member Name="#GetContraseña(System.Int64)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="False">
            <Messages>
-            <Message TypeName="Revisar consultas SQL para comprobar si tienen vulnerabilidades de seguridad" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2018-11-22 11:44:10Z" FixCategory="DependsOnFix">
+            <Message TypeName="Revisar consultas SQL para comprobar si tienen vulnerabilidades de seguridad" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2018-11-23 12:23:57Z" FixCategory="DependsOnFix">
              <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="D:\PROYECTOS MANTENIMIENTO\MANTENIMIENTO\MANTENIMIENTO_V1.0\BaseDeDatos" File="BDUsuarios.vb" Line="280">La cadena de consulta pasada a 'OleDbCommand.New(String, OleDbConnection)' en 'BDUsuarios.GetContraseña(Long)' podría contener las siguientes variables: 'Conversions.ToString(idUsuario)'. Si alguna de estas variables puede proceder de datos proporcionados por el usuario, considere el uso de un procedimiento almacenado o una consulta SQL parametrizada en lugar de compilar la consulta con concatenaciones de cadenas.</Issue>
             </Message>
            </Messages>
           </Member>
           <Member Name="#GetGrupo(System.Int64)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="False">
            <Messages>
-            <Message TypeName="Revisar consultas SQL para comprobar si tienen vulnerabilidades de seguridad" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2018-11-22 11:44:10Z" FixCategory="DependsOnFix">
+            <Message TypeName="Revisar consultas SQL para comprobar si tienen vulnerabilidades de seguridad" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2018-11-23 12:23:57Z" FixCategory="DependsOnFix">
              <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="D:\PROYECTOS MANTENIMIENTO\MANTENIMIENTO\MANTENIMIENTO_V1.0\BaseDeDatos" File="BDUsuarios.vb" Line="309">La cadena de consulta pasada a 'OleDbCommand.New(String, OleDbConnection)' en 'BDUsuarios.GetGrupo(Long)' podría contener las siguientes variables: 'Conversions.ToString(idUsuario)'. Si alguna de estas variables puede proceder de datos proporcionados por el usuario, considere el uso de un procedimiento almacenado o una consulta SQL parametrizada en lugar de compilar la consulta con concatenaciones de cadenas.</Issue>
             </Message>
            </Messages>
           </Member>
           <Member Name="#ModificarUsuario(MantEvolution.Usuario)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="False">
            <Messages>
-            <Message TypeName="Revisar consultas SQL para comprobar si tienen vulnerabilidades de seguridad" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2018-11-22 11:44:10Z" FixCategory="DependsOnFix">
+            <Message TypeName="Revisar consultas SQL para comprobar si tienen vulnerabilidades de seguridad" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2018-11-23 12:23:57Z" FixCategory="DependsOnFix">
              <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="D:\PROYECTOS MANTENIMIENTO\MANTENIMIENTO\MANTENIMIENTO_V1.0\BaseDeDatos" File="BDUsuarios.vb" Line="170">La cadena de consulta pasada a 'OleDbCommand.CommandText.Set(String)' en 'BDUsuarios.ModificarUsuario(Usuario)' podría contener las siguientes variables: 'Conversions.ToString(objUsuario.Id1)'. Si alguna de estas variables puede proceder de datos proporcionados por el usuario, considere el uso de un procedimiento almacenado o una consulta SQL parametrizada en lugar de compilar la consulta con concatenaciones de cadenas.</Issue>
              <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="D:\PROYECTOS MANTENIMIENTO\MANTENIMIENTO\MANTENIMIENTO_V1.0\BaseDeDatos" File="BDUsuarios.vb" Line="167">La cadena de consulta pasada a 'OleDbCommand.New(String, OleDbConnection)' en 'BDUsuarios.ModificarUsuario(Usuario)' podría contener las siguientes variables: 'Conversions.ToString(objUsuario.Id1)'. Si alguna de estas variables puede proceder de datos proporcionados por el usuario, considere el uso de un procedimiento almacenado o una consulta SQL parametrizada en lugar de compilar la consulta con concatenaciones de cadenas.</Issue>
             </Message>
@@ -455,14 +455,14 @@
           </Member>
           <Member Name="#ObtenerUnUsuario(System.Int64)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="False">
            <Messages>
-            <Message TypeName="Revisar consultas SQL para comprobar si tienen vulnerabilidades de seguridad" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2018-11-22 11:44:10Z" FixCategory="DependsOnFix">
+            <Message TypeName="Revisar consultas SQL para comprobar si tienen vulnerabilidades de seguridad" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2018-11-23 12:23:57Z" FixCategory="DependsOnFix">
              <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="D:\PROYECTOS MANTENIMIENTO\MANTENIMIENTO\MANTENIMIENTO_V1.0\BaseDeDatos" File="BDUsuarios.vb" Line="94">La cadena de consulta pasada a 'OleDbCommand.New(String, OleDbConnection)' en 'BDUsuarios.ObtenerUnUsuario(Long)' podría contener las siguientes variables: 'Conversions.ToString(IdUsuario)'. Si alguna de estas variables puede proceder de datos proporcionados por el usuario, considere el uso de un procedimiento almacenado o una consulta SQL parametrizada en lugar de compilar la consulta con concatenaciones de cadenas.</Issue>
             </Message>
            </Messages>
           </Member>
           <Member Name="#ObtenerUsuarios(System.Int64)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="False">
            <Messages>
-            <Message TypeName="Revisar consultas SQL para comprobar si tienen vulnerabilidades de seguridad" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2018-11-22 11:44:10Z" FixCategory="DependsOnFix">
+            <Message TypeName="Revisar consultas SQL para comprobar si tienen vulnerabilidades de seguridad" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2018-11-23 12:23:57Z" FixCategory="DependsOnFix">
              <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="D:\PROYECTOS MANTENIMIENTO\MANTENIMIENTO\MANTENIMIENTO_V1.0\BaseDeDatos" File="BDUsuarios.vb" Line="16">La cadena de consulta pasada a 'OleDbCommand.New(String, OleDbConnection)' en 'BDUsuarios.ObtenerUsuarios(Long)' podría contener las siguientes variables: 'Conversions.ToString(IdGrupo)'. Si alguna de estas variables puede proceder de datos proporcionados por el usuario, considere el uso de un procedimiento almacenado o una consulta SQL parametrizada en lugar de compilar la consulta con concatenaciones de cadenas.</Issue>
             </Message>
            </Messages>
@@ -473,14 +473,14 @@
          <Members>
           <Member Name="#ComprobarRepetidoVersion(System.String,System.Int64)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="False">
            <Messages>
-            <Message TypeName="Revisar consultas SQL para comprobar si tienen vulnerabilidades de seguridad" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2018-11-22 11:44:10Z" FixCategory="DependsOnFix">
+            <Message TypeName="Revisar consultas SQL para comprobar si tienen vulnerabilidades de seguridad" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2018-11-23 12:23:57Z" FixCategory="DependsOnFix">
              <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="D:\PROYECTOS MANTENIMIENTO\MANTENIMIENTO\MANTENIMIENTO_V1.0\BaseDeDatos" File="BDVersiones.vb" Line="265">La cadena de consulta pasada a 'OleDbCommand.New(String, OleDbConnection)' en 'BDVersiones.ComprobarRepetidoVersion(String, Long)' podría contener las siguientes variables: 'Version', 'Conversions.ToString(Producto)'. Si alguna de estas variables puede proceder de datos proporcionados por el usuario, considere el uso de un procedimiento almacenado o una consulta SQL parametrizada en lugar de compilar la consulta con concatenaciones de cadenas.</Issue>
             </Message>
            </Messages>
           </Member>
           <Member Name="#EliminarVersion(MantEvolution.Version)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="False">
            <Messages>
-            <Message TypeName="Revisar consultas SQL para comprobar si tienen vulnerabilidades de seguridad" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2018-11-22 11:44:10Z" FixCategory="DependsOnFix">
+            <Message TypeName="Revisar consultas SQL para comprobar si tienen vulnerabilidades de seguridad" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2018-11-23 12:23:57Z" FixCategory="DependsOnFix">
              <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="D:\PROYECTOS MANTENIMIENTO\MANTENIMIENTO\MANTENIMIENTO_V1.0\BaseDeDatos" File="BDVersiones.vb" Line="239">La cadena de consulta pasada a 'OleDbCommand.CommandText.Set(String)' en 'BDVersiones.EliminarVersion(Version)' podría contener las siguientes variables: 'Conversions.ToString(objVersion.Id1)'. Si alguna de estas variables puede proceder de datos proporcionados por el usuario, considere el uso de un procedimiento almacenado o una consulta SQL parametrizada en lugar de compilar la consulta con concatenaciones de cadenas.</Issue>
              <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="D:\PROYECTOS MANTENIMIENTO\MANTENIMIENTO\MANTENIMIENTO_V1.0\BaseDeDatos" File="BDVersiones.vb" Line="236">La cadena de consulta pasada a 'OleDbCommand.New(String, OleDbConnection)' en 'BDVersiones.EliminarVersion(Version)' podría contener las siguientes variables: 'Conversions.ToString(objVersion.Id1)'. Si alguna de estas variables puede proceder de datos proporcionados por el usuario, considere el uso de un procedimiento almacenado o una consulta SQL parametrizada en lugar de compilar la consulta con concatenaciones de cadenas.</Issue>
             </Message>
@@ -488,7 +488,7 @@
           </Member>
           <Member Name="#ModificarVersion(MantEvolution.Version)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="False">
            <Messages>
-            <Message TypeName="Revisar consultas SQL para comprobar si tienen vulnerabilidades de seguridad" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2018-11-22 11:44:10Z" FixCategory="DependsOnFix">
+            <Message TypeName="Revisar consultas SQL para comprobar si tienen vulnerabilidades de seguridad" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2018-11-23 12:23:57Z" FixCategory="DependsOnFix">
              <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="D:\PROYECTOS MANTENIMIENTO\MANTENIMIENTO\MANTENIMIENTO_V1.0\BaseDeDatos" File="BDVersiones.vb" Line="209">La cadena de consulta pasada a 'OleDbCommand.CommandText.Set(String)' en 'BDVersiones.ModificarVersion(Version)' podría contener las siguientes variables: 'Conversions.ToString(objVersion.Id1)'. Si alguna de estas variables puede proceder de datos proporcionados por el usuario, considere el uso de un procedimiento almacenado o una consulta SQL parametrizada en lugar de compilar la consulta con concatenaciones de cadenas.</Issue>
              <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="D:\PROYECTOS MANTENIMIENTO\MANTENIMIENTO\MANTENIMIENTO_V1.0\BaseDeDatos" File="BDVersiones.vb" Line="206">La cadena de consulta pasada a 'OleDbCommand.New(String, OleDbConnection)' en 'BDVersiones.ModificarVersion(Version)' podría contener las siguientes variables: 'Conversions.ToString(objVersion.Id1)'. Si alguna de estas variables puede proceder de datos proporcionados por el usuario, considere el uso de un procedimiento almacenado o una consulta SQL parametrizada en lugar de compilar la consulta con concatenaciones de cadenas.</Issue>
             </Message>
@@ -496,14 +496,14 @@
           </Member>
           <Member Name="#ObtenerUnaVersion(System.Int64)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="False">
            <Messages>
-            <Message TypeName="Revisar consultas SQL para comprobar si tienen vulnerabilidades de seguridad" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2018-11-22 11:44:10Z" FixCategory="DependsOnFix">
+            <Message TypeName="Revisar consultas SQL para comprobar si tienen vulnerabilidades de seguridad" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2018-11-23 12:23:57Z" FixCategory="DependsOnFix">
              <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="D:\PROYECTOS MANTENIMIENTO\MANTENIMIENTO\MANTENIMIENTO_V1.0\BaseDeDatos" File="BDVersiones.vb" Line="118">La cadena de consulta pasada a 'OleDbCommand.New(String, OleDbConnection)' en 'BDVersiones.ObtenerUnaVersion(Long)' podría contener las siguientes variables: 'Conversions.ToString(IdVersion)'. Si alguna de estas variables puede proceder de datos proporcionados por el usuario, considere el uso de un procedimiento almacenado o una consulta SQL parametrizada en lugar de compilar la consulta con concatenaciones de cadenas.</Issue>
             </Message>
            </Messages>
           </Member>
           <Member Name="#ObtenerVersiones(System.Int64)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="False">
            <Messages>
-            <Message TypeName="Revisar consultas SQL para comprobar si tienen vulnerabilidades de seguridad" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2018-11-22 11:44:10Z" FixCategory="DependsOnFix">
+            <Message TypeName="Revisar consultas SQL para comprobar si tienen vulnerabilidades de seguridad" Category="Microsoft.Security" CheckId="CA2100" Status="Active" Created="2018-11-23 12:23:57Z" FixCategory="DependsOnFix">
              <Issue Name="WithNonLiterals" Certainty="75" Level="Warning" Path="D:\PROYECTOS MANTENIMIENTO\MANTENIMIENTO\MANTENIMIENTO_V1.0\BaseDeDatos" File="BDVersiones.vb" Line="67">La cadena de consulta pasada a 'OleDbCommand.New(String, OleDbConnection)' en 'BDVersiones.ObtenerVersiones(Long)' podría contener las siguientes variables: 'Conversions.ToString(IdProducto)'. Si alguna de estas variables puede proceder de datos proporcionados por el usuario, considere el uso de un procedimiento almacenado o una consulta SQL parametrizada en lugar de compilar la consulta con concatenaciones de cadenas.</Issue>
             </Message>
            </Messages>

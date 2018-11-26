@@ -30,6 +30,7 @@
 
         Public Const GRUPO_VENTAS As Integer = 120000
         Public Const VENTAS_TARIFAS As Integer = 20
+        Public Const VENTAS_TARIFAS_SALIR As Integer = 2099
 
         Public Const VENTAS_PEDIDOS_FICHERO As Integer = 21
         Public Const VENTAS_PEDIDOS_FICHERO_AÑADIR As Integer = 2101

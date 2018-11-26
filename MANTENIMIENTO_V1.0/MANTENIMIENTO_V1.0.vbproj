@@ -120,10 +120,10 @@
     <Compile Include="Modulos\Formatos.vb" />
     <Compile Include="Modulos\DefinicionesPantallas.vb" />
     <Compile Include="Modulos\RC.vb" />
-    <Compile Include="Pantallas\Form1.Designer.vb">
-      <DependentUpon>Form1.vb</DependentUpon>
+    <Compile Include="Pantallas\FrmTarifas.Designer.vb">
+      <DependentUpon>FrmTarifas.vb</DependentUpon>
     </Compile>
-    <Compile Include="Pantallas\Form1.vb">
+    <Compile Include="Pantallas\FrmTarifas.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Pantallas\FrmClientesFicha.designer.vb">
@@ -252,8 +252,8 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Pantallas\Form1.resx">
-      <DependentUpon>Form1.vb</DependentUpon>
+    <EmbeddedResource Include="Pantallas\FrmTarifas.resx">
+      <DependentUpon>FrmTarifas.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Pantallas\FrmClientesFicha.resx">
       <DependentUpon>FrmClientesFicha.vb</DependentUpon>

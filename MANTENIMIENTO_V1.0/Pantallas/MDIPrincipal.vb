@@ -821,6 +821,73 @@ Public Class MDIPrincipal
                 End If
 
 
+            Case DEFMENU.VENTAS_TARIFAS
+                Select Case ObtenerPermisosPantalla(ObtenerIdUnaPantalla(eventArgs.control.Id), UsuarioGrupo)
+                    Case 0
+                        ElPermiso = 0
+                        ObjError.Pantalla1 = Me
+                        ObjError.Tipo1 = 1 'Avisos
+                        ObjError.Titulo = "TARIFAS"
+                        ObjError.SetMensaje("No tiene Permiso para acceder a esta pantalla.")
+                        ObjError.Control1 = ""
+                        ObjError.Pie1 = False
+                        ObjError.Foco1 = 0
+                        FrmError.ObjError = ObjError
+                        FrmError.ShowDialog()
+                        If FrmError.DialogResult = DialogResult.OK Then
+                            FrmError.Dispose()
+                            Exit Sub
+                        End If
+                    Case 1
+                        ElPermiso = 1
+                        ObjError.Pantalla1 = Me
+                        ObjError.Tipo1 = 3 'Avisos
+                        ObjError.Titulo = "TARIFAS"
+                        ObjError.SetMensaje("No tiene Permiso para realizar cambios en esta pantalla.")
+                        ObjError.Control1 = ""
+                        ObjError.Pie1 = False
+                        ObjError.Foco1 = 0
+                        FrmError.ObjError = ObjError
+                        FrmError.ShowDialog()
+                        If FrmError.DialogResult = DialogResult.OK Then
+                            FrmError.Dispose()
+                        End If
+                End Select
+
+                'If Not (EstableceAccesoSinMsg(ID_BANCOS)) Then
+                '    MessageBox Me.hWnd, "Acceso no permitido. Consulte con su Administrador", Me.Caption, vbOKOnly + vbCritical
+                '    Exit Sub
+                'End If
+
+                If Not fTarifas Is Nothing Then
+                    CommandBars.TabWorkspace.FindItem(fTarifas.Handle).Selected = True
+                    Exit Sub
+                End If
+
+                Dim Form2 As frmTarifas = New frmTarifas With {
+                       .MdiParent = Me}
+                Form2.Permisos = ElPermiso
+                Form2.Show()
+                'Form2.CargarComboGrupos()'Esto hay que cargarlo desde fuera, porque si no no va
+
+            'Case DEFMENU.MAESTROS_USUARIOS_NUEVO
+            '    If Not fUsuarios Is Nothing Then
+            '        fUsuarios.Menu_Nuevo()
+            '    End If
+            'Case DEFMENU.MAESTROS_USUARIOS_ELIMINAR
+
+            '    If Not fUsuarios Is Nothing Then
+            '        fUsuarios.Menu_Eliminar()
+            '    End If
+            'Case DEFMENU.MAESTROS_USUARIOS_IMPRIMIR
+            '    If Not fUsuarios Is Nothing Then
+            '        fUsuarios.Menu_Imprimir()
+            '    End If
+            Case DEFMENU.VENTAS_TARIFAS_SALIR
+                If Not fTarifas Is Nothing Then
+                    fTarifas.Close()
+                End If
+
             Case DEFMENU.ESTADIS_VENTAS
                 Select Case ObtenerPermisosPantalla(ObtenerIdUnaPantalla(eventArgs.control.Id), UsuarioGrupo)
                     Case 0

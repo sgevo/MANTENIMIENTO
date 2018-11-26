@@ -564,7 +564,7 @@ Partial Class FrmMantenimiento
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(976, 624)
+        Me.ClientSize = New System.Drawing.Size(1101, 624)
         Me.Controls.Add(Me.lblTareas)
         Me.Controls.Add(Me.RCTareas)
         Me.Controls.Add(Me.btnBuscar)

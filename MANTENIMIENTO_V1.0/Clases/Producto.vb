@@ -5,7 +5,7 @@
     Private Descripcion As String
     Private Tipo As String
     Private Versiones As Boolean
-    Private Mantenimiento As Boolean
+    Private IdMantenimiento As Long
     Private Red As Boolean
     Private Temporal As Boolean
     Private Precio As Double
@@ -18,13 +18,13 @@
 
     End Sub
 
-    Public Sub New(id As Long, codigo As String, descripcion As String, tipo As String, versiones As Boolean, mantenimiento As Boolean, red As Boolean, temporal As Boolean, precio As Double, precioRed As Double)
+    Public Sub New(id As Long, codigo As String, descripcion As String, tipo As String, versiones As Boolean, mantenimiento As Long, red As Boolean, temporal As Boolean, precio As Double, precioRed As Double)
         Me.Id = id
         Me.Codigo = codigo
         Me.Descripcion = descripcion
         Me.Tipo = tipo
         Me.Versiones = versiones
-        Me.Mantenimiento = mantenimiento
+        Me.IdMantenimiento = mantenimiento
         Me.Red = red
         Me.Temporal = temporal
         Me.Precio = precio
@@ -74,15 +74,6 @@
         End Get
         Set(value As Boolean)
             Versiones = value
-        End Set
-    End Property
-
-    Public Property Mantenimiento1 As Boolean
-        Get
-            Return Mantenimiento
-        End Get
-        Set(value As Boolean)
-            Mantenimiento = value
         End Set
     End Property
 
@@ -137,6 +128,15 @@
         End Get
         Set(value As ArrayList)
             arrayPacks = value
+        End Set
+    End Property
+
+    Public Property IdMantenimiento1 As Long
+        Get
+            Return IdMantenimiento
+        End Get
+        Set(value As Long)
+            IdMantenimiento = value
         End Set
     End Property
 End Class
