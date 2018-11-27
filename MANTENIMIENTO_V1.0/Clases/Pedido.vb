@@ -4,7 +4,7 @@ Imports MantEvolution
 Public Class Pedido
 
 
-    Private Accion As Integer 'Esto nos dice si esta añadiendo o Modificando
+
     Private Id As Long 'Antiguo codigo
 
     Private Numero As String
@@ -53,15 +53,6 @@ Public Class Pedido
             Case 10 To 12
                 Me.Trimestre = 4
         End Select
-
-    End Sub
-
-    Sub New() 'Cuando me creo un pedido nuevo
-        Me.Accion = 1 ' Nuevo
-        Me.Numero = NumeroDePedido()
-        Me.Fecha = DateTime.Now.ToString("dd/MM/yyyy")
-        Me.Estado = 1
-
     End Sub
 
 
@@ -179,15 +170,6 @@ Public Class Pedido
         End Get
         Set(value As Integer)
             Trimestre = value
-        End Set
-    End Property
-
-    Public Property Accion1 As Integer
-        Get
-            Return Accion
-        End Get
-        Set(value As Integer)
-            Accion = value
         End Set
     End Property
 End Class

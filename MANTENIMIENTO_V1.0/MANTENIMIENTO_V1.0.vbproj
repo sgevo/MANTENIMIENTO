@@ -337,14 +337,6 @@
       <WrapperTool>aximp</WrapperTool>
       <Isolated>False</Isolated>
     </COMReference>
-    <COMReference Include="AxXtremeMarkup">
-      <Guid>{C981544E-1A65-45D5-B80E-28746DFE8055}</Guid>
-      <VersionMajor>18</VersionMajor>
-      <VersionMinor>0</VersionMinor>
-      <Lcid>0</Lcid>
-      <WrapperTool>aximp</WrapperTool>
-      <Isolated>False</Isolated>
-    </COMReference>
     <COMReference Include="AxXtremeReportControl">
       <Guid>{7CAC59E5-B703-4CCF-B326-8B956D962F27}</Guid>
       <VersionMajor>18</VersionMajor>
@@ -380,15 +372,6 @@
     </COMReference>
     <COMReference Include="XtremeCommandBars">
       <Guid>{555E8FCC-830E-45CC-AF00-A012D5AE7451}</Guid>
-      <VersionMajor>18</VersionMajor>
-      <VersionMinor>0</VersionMinor>
-      <Lcid>0</Lcid>
-      <WrapperTool>tlbimp</WrapperTool>
-      <Isolated>False</Isolated>
-      <EmbedInteropTypes>True</EmbedInteropTypes>
-    </COMReference>
-    <COMReference Include="XtremeMarkup">
-      <Guid>{C981544E-1A65-45D5-B80E-28746DFE8055}</Guid>
       <VersionMajor>18</VersionMajor>
       <VersionMinor>0</VersionMinor>
       <Lcid>0</Lcid>

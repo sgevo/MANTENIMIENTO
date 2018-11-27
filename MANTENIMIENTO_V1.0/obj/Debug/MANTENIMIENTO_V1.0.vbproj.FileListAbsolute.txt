@@ -276,6 +276,7 @@ D:\MANTENIMIENTO\MANTENIMIENTO_V1.0\obj\Debug\AxInterop.XtremeReportControl.dll
 D:\MANTENIMIENTO\MANTENIMIENTO_V1.0\obj\Debug\AxInterop.XtremeShortcutBar.dll
 D:\MANTENIMIENTO\MANTENIMIENTO_V1.0\obj\Debug\AxInterop.XtremeSuiteControls.dll
 D:\MANTENIMIENTO\MANTENIMIENTO_V1.0\obj\Debug\MANTENIMIENTO_V1.0.vbproj.ResolveComReference.cache
+D:\MANTENIMIENTO\MANTENIMIENTO_V1.0\obj\Debug\MantEvolution.Form1.resources
 D:\MANTENIMIENTO\MANTENIMIENTO_V1.0\obj\Debug\MantEvolution.FrmClientesFicha.resources
 D:\MANTENIMIENTO\MANTENIMIENTO_V1.0\obj\Debug\MantEvolution.FrmClientesFichero.resources
 D:\MANTENIMIENTO\MANTENIMIENTO_V1.0\obj\Debug\MantEvolution.FrmConsultaMantenimiento.resources
@@ -301,8 +302,3 @@ D:\MANTENIMIENTO\MANTENIMIENTO_V1.0\obj\Debug\MANTENIMIENTO.exe
 D:\MANTENIMIENTO\MANTENIMIENTO_V1.0\obj\Debug\MANTENIMIENTO.xml
 D:\MANTENIMIENTO\MANTENIMIENTO_V1.0\obj\Debug\MANTENIMIENTO.pdb
 D:\PROYECTOS MANTENIMIENTO\MANTENIMIENTO\MANTENIMIENTO_V1.0\obj\Debug\MantEvolution.frmTarifas.resources
-D:\MANTENIMIENTO\MANTENIMIENTO_V1.0\obj\Debug\MantEvolution.frmTarifas.resources
-D:\MANTENIMIENTO\MANTENIMIENTO_V1.0\bin\Debug\Interop.XtremeMarkup.dll
-D:\MANTENIMIENTO\MANTENIMIENTO_V1.0\bin\Debug\AxInterop.XtremeMarkup.dll
-D:\MANTENIMIENTO\MANTENIMIENTO_V1.0\obj\Debug\Interop.XtremeMarkup.dll
-D:\MANTENIMIENTO\MANTENIMIENTO_V1.0\obj\Debug\AxInterop.XtremeMarkup.dll

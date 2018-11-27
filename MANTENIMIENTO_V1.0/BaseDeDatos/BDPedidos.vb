@@ -71,32 +71,4 @@ Module BDPedidos
         Dim ArrayPedidos As New ArrayList()
         Return ArrayPedidos
     End Function
-
-    Function NumeroDePedido() As String
-        Dim numeroPedido As String
-        Try
-            Dim BDConexion As OleDbConnection
-            BDConexion = BD.Conectar()
-            Dim ds As New DataSet
-            Dim dt As New DataTable
-            ds.Tables.Add(dt)
-            Dim da As New OleDbDataAdapter
-
-            da = New OleDbDataAdapter("SELECT Pedidos.Numero FROM Pedidos WHERE (Year(Fecha) = Year(Now())) ORDER BY Pedidos.Numero;", BDConexion)
-            da.Fill(dt)
-
-
-            If dt.Rows.Count <> 0 Then
-                numeroPedido = dt.Rows(dt.Rows.Count - 1).Item(0).ToString()
-            Else
-                numeroPedido = Right(Year(Now()), 2) & "-" & "1001"
-            End If
-
-            Return numeroPedido
-        Catch ex As Exception
-            numeroPedido = Right(Year(Now()), 2) & "-" & "1001"
-            Return numeroPedido
-        End Try
-
-    End Function
 End Module
