@@ -9,8 +9,8 @@ Module BD
 
         Dim BDConexion As OleDbConnection
         Dim connectionString As String
-        '        connectionString = "Provider=Microsoft.Jet.OLEDB.4.0;Data Source=Y:\Tempo\MANTENIMIENTO EVO\Datos\MantenimientoEVO.mdb"
-        connectionString = "Provider=Microsoft.Jet.OLEDB.4.0;Data Source=C:\Users\Yoli\OneDrive\Documents\MantenimientoEVO.mdb"
+        connectionString = "Provider=Microsoft.Jet.OLEDB.4.0;Data Source=Y:\Tempo\MANTENIMIENTO EVO\Datos\MantenimientoEVO.mdb"
+        ' connectionString = "Provider=Microsoft.Jet.OLEDB.4.0;Data Source=C:\Users\Yoli\OneDrive\Documents\MantenimientoEVO.mdb"
         'connectionString = "Provider=Microsoft.Jet.OLEDB.4.0;Data Source=D:\PROYECTOS MANTENIMIENTO\MANTENIMIENTO\Datos\MantenimientoEVO.mdb"
         BDConexion = New OleDbConnection(connectionString)
 

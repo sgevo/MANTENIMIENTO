@@ -58,6 +58,7 @@ Public Class FrmPedidosFichero
 
         RCPedidos.Columns.Add(COL_ID, "Id", 100, True)
 
+
         RCPedidos.Columns.Add(COL_NUMERO, "Numero", 100, True)
         RCPedidos.Columns.Add(COL_FECHA, "Fecha", 250, True)
         RCPedidos.Columns.Add(COL_IDCLIENTE, "idCliente", 60, True)
@@ -214,6 +215,7 @@ Public Class FrmPedidosFichero
         Dim Form3 As FrmPedidos = New FrmPedidos With {
         .MdiParent = MDIPrincipal}
         '  Form3.ObjCliente = New Cliente()
+
         Form3.Show()
 
         Me.Visible = False

@@ -47,8 +47,10 @@ Partial Class FrmPedidos
         Me.txtLicencia = New AxXtremeSuiteControls.AxFlatEdit()
         Me.Titulo = New AxXtremeShortcutBar.AxShortcutCaption()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.tbFecha = New AxXtremeSuiteControls.AxFlatEdit()
+        Me.tbNumero = New AxXtremeSuiteControls.AxFlatEdit()
         Me.AxLabel15 = New AxXtremeSuiteControls.AxLabel()
-        Me.AxLabel5 = New AxXtremeSuiteControls.AxLabel()
+        Me.tbEstado = New AxXtremeSuiteControls.AxLabel()
         Me.AxLabel10 = New AxXtremeSuiteControls.AxLabel()
         Me.AxLabel14 = New AxXtremeSuiteControls.AxLabel()
         Me.AxLabel4 = New AxXtremeSuiteControls.AxLabel()
@@ -57,8 +59,30 @@ Partial Class FrmPedidos
         Me.AxLabel17 = New AxXtremeSuiteControls.AxLabel()
         Me.AxFlatEdit1 = New AxXtremeSuiteControls.AxFlatEdit()
         Me.AxLabel18 = New AxXtremeSuiteControls.AxLabel()
-        Me.AxFlatEdit2 = New AxXtremeSuiteControls.AxFlatEdit()
-        Me.AxFlatEdit3 = New AxXtremeSuiteControls.AxFlatEdit()
+        Me.GroupBox2 = New System.Windows.Forms.GroupBox()
+        Me.ckRed = New AxXtremeSuiteControls.AxCheckBox()
+        Me.AxPushButton1 = New AxXtremeSuiteControls.AxPushButton()
+        Me.AxFlatEdit7 = New AxXtremeSuiteControls.AxFlatEdit()
+        Me.AxLabel26 = New AxXtremeSuiteControls.AxLabel()
+        Me.AxFlatEdit6 = New AxXtremeSuiteControls.AxFlatEdit()
+        Me.AxLabel25 = New AxXtremeSuiteControls.AxLabel()
+        Me.AxComboBox3 = New AxXtremeSuiteControls.AxComboBox()
+        Me.AxLabel24 = New AxXtremeSuiteControls.AxLabel()
+        Me.tbImporte = New AxXtremeSuiteControls.AxFlatEdit()
+        Me.AxLabel23 = New AxXtremeSuiteControls.AxLabel()
+        Me.tbDto = New AxXtremeSuiteControls.AxFlatEdit()
+        Me.AxLabel22 = New AxXtremeSuiteControls.AxLabel()
+        Me.tbPrecio = New AxXtremeSuiteControls.AxFlatEdit()
+        Me.AxLabel21 = New AxXtremeSuiteControls.AxLabel()
+        Me.tbCantidad = New AxXtremeSuiteControls.AxFlatEdit()
+        Me.AxLabel20 = New AxXtremeSuiteControls.AxLabel()
+        Me.ckMante = New AxXtremeSuiteControls.AxCheckBox()
+        Me.cbProductos = New AxXtremeSuiteControls.AxComboBox()
+        Me.cbTipo = New AxXtremeSuiteControls.AxComboBox()
+        Me.AxLabel19 = New AxXtremeSuiteControls.AxLabel()
+        Me.AxLabel9 = New AxXtremeSuiteControls.AxLabel()
+        Me.AxLabel8 = New AxXtremeSuiteControls.AxLabel()
+        Me.AxLabel5 = New AxXtremeSuiteControls.AxLabel()
         Me.GBDatosCliente.SuspendLayout()
         CType(Me.lblDirDatos, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.AxLabel7, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -83,8 +107,10 @@ Partial Class FrmPedidos
         CType(Me.txtLicencia, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Titulo, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox1.SuspendLayout()
+        CType(Me.tbFecha, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.tbNumero, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.AxLabel15, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.AxLabel5, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.tbEstado, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.AxLabel10, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.AxLabel14, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.AxLabel4, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -93,8 +119,30 @@ Partial Class FrmPedidos
         CType(Me.AxLabel17, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.AxFlatEdit1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.AxLabel18, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.AxFlatEdit2, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.AxFlatEdit3, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.GroupBox2.SuspendLayout()
+        CType(Me.ckRed, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.AxPushButton1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.AxFlatEdit7, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.AxLabel26, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.AxFlatEdit6, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.AxLabel25, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.AxComboBox3, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.AxLabel24, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.tbImporte, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.AxLabel23, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.tbDto, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.AxLabel22, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.tbPrecio, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.AxLabel21, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.tbCantidad, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.AxLabel20, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.ckMante, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.cbProductos, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.cbTipo, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.AxLabel19, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.AxLabel9, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.AxLabel8, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.AxLabel5, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'GBDatosCliente
@@ -305,10 +353,10 @@ Partial Class FrmPedidos
         '
         'GroupBox1
         '
-        Me.GroupBox1.Controls.Add(Me.AxFlatEdit3)
-        Me.GroupBox1.Controls.Add(Me.AxFlatEdit2)
+        Me.GroupBox1.Controls.Add(Me.tbFecha)
+        Me.GroupBox1.Controls.Add(Me.tbNumero)
         Me.GroupBox1.Controls.Add(Me.AxLabel15)
-        Me.GroupBox1.Controls.Add(Me.AxLabel5)
+        Me.GroupBox1.Controls.Add(Me.tbEstado)
         Me.GroupBox1.Controls.Add(Me.AxLabel10)
         Me.GroupBox1.Controls.Add(Me.AxLabel14)
         Me.GroupBox1.Controls.Add(Me.AxLabel4)
@@ -318,6 +366,22 @@ Partial Class FrmPedidos
         Me.GroupBox1.TabIndex = 5
         Me.GroupBox1.TabStop = False
         '
+        'tbFecha
+        '
+        Me.tbFecha.Location = New System.Drawing.Point(114, 103)
+        Me.tbFecha.Name = "tbFecha"
+        Me.tbFecha.OcxState = CType(resources.GetObject("tbFecha.OcxState"), System.Windows.Forms.AxHost.State)
+        Me.tbFecha.Size = New System.Drawing.Size(178, 23)
+        Me.tbFecha.TabIndex = 70
+        '
+        'tbNumero
+        '
+        Me.tbNumero.Location = New System.Drawing.Point(114, 74)
+        Me.tbNumero.Name = "tbNumero"
+        Me.tbNumero.OcxState = CType(resources.GetObject("tbNumero.OcxState"), System.Windows.Forms.AxHost.State)
+        Me.tbNumero.Size = New System.Drawing.Size(178, 23)
+        Me.tbNumero.TabIndex = 69
+        '
         'AxLabel15
         '
         Me.AxLabel15.Location = New System.Drawing.Point(15, 76)
@@ -326,13 +390,13 @@ Partial Class FrmPedidos
         Me.AxLabel15.Size = New System.Drawing.Size(129, 22)
         Me.AxLabel15.TabIndex = 67
         '
-        'AxLabel5
+        'tbEstado
         '
-        Me.AxLabel5.Location = New System.Drawing.Point(114, 132)
-        Me.AxLabel5.Name = "AxLabel5"
-        Me.AxLabel5.OcxState = CType(resources.GetObject("AxLabel5.OcxState"), System.Windows.Forms.AxHost.State)
-        Me.AxLabel5.Size = New System.Drawing.Size(178, 22)
-        Me.AxLabel5.TabIndex = 66
+        Me.tbEstado.Location = New System.Drawing.Point(114, 132)
+        Me.tbEstado.Name = "tbEstado"
+        Me.tbEstado.OcxState = CType(resources.GetObject("tbEstado.OcxState"), System.Windows.Forms.AxHost.State)
+        Me.tbEstado.Size = New System.Drawing.Size(178, 22)
+        Me.tbEstado.TabIndex = 66
         '
         'AxLabel10
         '
@@ -364,12 +428,12 @@ Partial Class FrmPedidos
         Me.RCPedido.Location = New System.Drawing.Point(12, 278)
         Me.RCPedido.Name = "RCPedido"
         Me.RCPedido.OcxState = CType(resources.GetObject("RCPedido.OcxState"), System.Windows.Forms.AxHost.State)
-        Me.RCPedido.Size = New System.Drawing.Size(1099, 244)
+        Me.RCPedido.Size = New System.Drawing.Size(1099, 197)
         Me.RCPedido.TabIndex = 6
         '
         'AxLabel16
         '
-        Me.AxLabel16.Location = New System.Drawing.Point(928, 542)
+        Me.AxLabel16.Location = New System.Drawing.Point(922, 598)
         Me.AxLabel16.Name = "AxLabel16"
         Me.AxLabel16.OcxState = CType(resources.GetObject("AxLabel16.OcxState"), System.Windows.Forms.AxHost.State)
         Me.AxLabel16.Size = New System.Drawing.Size(178, 22)
@@ -377,7 +441,7 @@ Partial Class FrmPedidos
         '
         'AxLabel17
         '
-        Me.AxLabel17.Location = New System.Drawing.Point(829, 542)
+        Me.AxLabel17.Location = New System.Drawing.Point(829, 598)
         Me.AxLabel17.Name = "AxLabel17"
         Me.AxLabel17.OcxState = CType(resources.GetObject("AxLabel17.OcxState"), System.Windows.Forms.AxHost.State)
         Me.AxLabel17.Size = New System.Drawing.Size(129, 22)
@@ -385,7 +449,7 @@ Partial Class FrmPedidos
         '
         'AxFlatEdit1
         '
-        Me.AxFlatEdit1.Location = New System.Drawing.Point(133, 533)
+        Me.AxFlatEdit1.Location = New System.Drawing.Point(128, 570)
         Me.AxFlatEdit1.Name = "AxFlatEdit1"
         Me.AxFlatEdit1.OcxState = CType(resources.GetObject("AxFlatEdit1.OcxState"), System.Windows.Forms.AxHost.State)
         Me.AxFlatEdit1.Size = New System.Drawing.Size(571, 81)
@@ -393,33 +457,233 @@ Partial Class FrmPedidos
         '
         'AxLabel18
         '
-        Me.AxLabel18.Location = New System.Drawing.Point(12, 533)
+        Me.AxLabel18.Location = New System.Drawing.Point(7, 570)
         Me.AxLabel18.Name = "AxLabel18"
         Me.AxLabel18.OcxState = CType(resources.GetObject("AxLabel18.OcxState"), System.Windows.Forms.AxHost.State)
         Me.AxLabel18.Size = New System.Drawing.Size(100, 22)
         Me.AxLabel18.TabIndex = 72
         '
-        'AxFlatEdit2
+        'GroupBox2
         '
-        Me.AxFlatEdit2.Location = New System.Drawing.Point(114, 74)
-        Me.AxFlatEdit2.Name = "AxFlatEdit2"
-        Me.AxFlatEdit2.OcxState = CType(resources.GetObject("AxFlatEdit2.OcxState"), System.Windows.Forms.AxHost.State)
-        Me.AxFlatEdit2.Size = New System.Drawing.Size(178, 23)
-        Me.AxFlatEdit2.TabIndex = 69
+        Me.GroupBox2.Controls.Add(Me.ckRed)
+        Me.GroupBox2.Controls.Add(Me.AxPushButton1)
+        Me.GroupBox2.Controls.Add(Me.AxFlatEdit7)
+        Me.GroupBox2.Controls.Add(Me.AxLabel26)
+        Me.GroupBox2.Controls.Add(Me.AxFlatEdit6)
+        Me.GroupBox2.Controls.Add(Me.AxLabel25)
+        Me.GroupBox2.Controls.Add(Me.AxComboBox3)
+        Me.GroupBox2.Controls.Add(Me.AxLabel24)
+        Me.GroupBox2.Controls.Add(Me.tbImporte)
+        Me.GroupBox2.Controls.Add(Me.AxLabel23)
+        Me.GroupBox2.Controls.Add(Me.tbDto)
+        Me.GroupBox2.Controls.Add(Me.AxLabel22)
+        Me.GroupBox2.Controls.Add(Me.tbPrecio)
+        Me.GroupBox2.Controls.Add(Me.AxLabel21)
+        Me.GroupBox2.Controls.Add(Me.tbCantidad)
+        Me.GroupBox2.Controls.Add(Me.AxLabel20)
+        Me.GroupBox2.Controls.Add(Me.ckMante)
+        Me.GroupBox2.Controls.Add(Me.cbProductos)
+        Me.GroupBox2.Controls.Add(Me.cbTipo)
+        Me.GroupBox2.Controls.Add(Me.AxLabel19)
+        Me.GroupBox2.Controls.Add(Me.AxLabel9)
+        Me.GroupBox2.Controls.Add(Me.AxLabel8)
+        Me.GroupBox2.Controls.Add(Me.AxLabel5)
+        Me.GroupBox2.Location = New System.Drawing.Point(7, 481)
+        Me.GroupBox2.Name = "GroupBox2"
+        Me.GroupBox2.Size = New System.Drawing.Size(1093, 83)
+        Me.GroupBox2.TabIndex = 73
+        Me.GroupBox2.TabStop = False
         '
-        'AxFlatEdit3
+        'ckRed
         '
-        Me.AxFlatEdit3.Location = New System.Drawing.Point(114, 103)
-        Me.AxFlatEdit3.Name = "AxFlatEdit3"
-        Me.AxFlatEdit3.OcxState = CType(resources.GetObject("AxFlatEdit3.OcxState"), System.Windows.Forms.AxHost.State)
-        Me.AxFlatEdit3.Size = New System.Drawing.Size(178, 23)
-        Me.AxFlatEdit3.TabIndex = 70
+        Me.ckRed.Location = New System.Drawing.Point(254, 38)
+        Me.ckRed.Name = "ckRed"
+        Me.ckRed.OcxState = CType(resources.GetObject("ckRed.OcxState"), System.Windows.Forms.AxHost.State)
+        Me.ckRed.Size = New System.Drawing.Size(23, 28)
+        Me.ckRed.TabIndex = 92
+        '
+        'AxPushButton1
+        '
+        Me.AxPushButton1.Location = New System.Drawing.Point(1043, 30)
+        Me.AxPushButton1.Name = "AxPushButton1"
+        Me.AxPushButton1.OcxState = CType(resources.GetObject("AxPushButton1.OcxState"), System.Windows.Forms.AxHost.State)
+        Me.AxPushButton1.Size = New System.Drawing.Size(44, 33)
+        Me.AxPushButton1.TabIndex = 91
+        '
+        'AxFlatEdit7
+        '
+        Me.AxFlatEdit7.Location = New System.Drawing.Point(948, 38)
+        Me.AxFlatEdit7.Name = "AxFlatEdit7"
+        Me.AxFlatEdit7.OcxState = CType(resources.GetObject("AxFlatEdit7.OcxState"), System.Windows.Forms.AxHost.State)
+        Me.AxFlatEdit7.Size = New System.Drawing.Size(79, 23)
+        Me.AxFlatEdit7.TabIndex = 89
+        '
+        'AxLabel26
+        '
+        Me.AxLabel26.Location = New System.Drawing.Point(948, 10)
+        Me.AxLabel26.Name = "AxLabel26"
+        Me.AxLabel26.OcxState = CType(resources.GetObject("AxLabel26.OcxState"), System.Windows.Forms.AxHost.State)
+        Me.AxLabel26.Size = New System.Drawing.Size(58, 22)
+        Me.AxLabel26.TabIndex = 90
+        '
+        'AxFlatEdit6
+        '
+        Me.AxFlatEdit6.Location = New System.Drawing.Point(851, 38)
+        Me.AxFlatEdit6.Name = "AxFlatEdit6"
+        Me.AxFlatEdit6.OcxState = CType(resources.GetObject("AxFlatEdit6.OcxState"), System.Windows.Forms.AxHost.State)
+        Me.AxFlatEdit6.Size = New System.Drawing.Size(79, 23)
+        Me.AxFlatEdit6.TabIndex = 87
+        '
+        'AxLabel25
+        '
+        Me.AxLabel25.Location = New System.Drawing.Point(851, 10)
+        Me.AxLabel25.Name = "AxLabel25"
+        Me.AxLabel25.OcxState = CType(resources.GetObject("AxLabel25.OcxState"), System.Windows.Forms.AxHost.State)
+        Me.AxLabel25.Size = New System.Drawing.Size(79, 22)
+        Me.AxLabel25.TabIndex = 88
+        '
+        'AxComboBox3
+        '
+        Me.AxComboBox3.Location = New System.Drawing.Point(754, 40)
+        Me.AxComboBox3.Name = "AxComboBox3"
+        Me.AxComboBox3.OcxState = CType(resources.GetObject("AxComboBox3.OcxState"), System.Windows.Forms.AxHost.State)
+        Me.AxComboBox3.Size = New System.Drawing.Size(80, 21)
+        Me.AxComboBox3.TabIndex = 86
+        '
+        'AxLabel24
+        '
+        Me.AxLabel24.Location = New System.Drawing.Point(754, 12)
+        Me.AxLabel24.Name = "AxLabel24"
+        Me.AxLabel24.OcxState = CType(resources.GetObject("AxLabel24.OcxState"), System.Windows.Forms.AxHost.State)
+        Me.AxLabel24.Size = New System.Drawing.Size(58, 22)
+        Me.AxLabel24.TabIndex = 85
+        '
+        'tbImporte
+        '
+        Me.tbImporte.Location = New System.Drawing.Point(657, 40)
+        Me.tbImporte.Name = "tbImporte"
+        Me.tbImporte.OcxState = CType(resources.GetObject("tbImporte.OcxState"), System.Windows.Forms.AxHost.State)
+        Me.tbImporte.Size = New System.Drawing.Size(79, 23)
+        Me.tbImporte.TabIndex = 82
+        '
+        'AxLabel23
+        '
+        Me.AxLabel23.Location = New System.Drawing.Point(657, 12)
+        Me.AxLabel23.Name = "AxLabel23"
+        Me.AxLabel23.OcxState = CType(resources.GetObject("AxLabel23.OcxState"), System.Windows.Forms.AxHost.State)
+        Me.AxLabel23.Size = New System.Drawing.Size(58, 22)
+        Me.AxLabel23.TabIndex = 83
+        '
+        'tbDto
+        '
+        Me.tbDto.Location = New System.Drawing.Point(559, 40)
+        Me.tbDto.Name = "tbDto"
+        Me.tbDto.OcxState = CType(resources.GetObject("tbDto.OcxState"), System.Windows.Forms.AxHost.State)
+        Me.tbDto.Size = New System.Drawing.Size(79, 23)
+        Me.tbDto.TabIndex = 80
+        '
+        'AxLabel22
+        '
+        Me.AxLabel22.Location = New System.Drawing.Point(559, 12)
+        Me.AxLabel22.Name = "AxLabel22"
+        Me.AxLabel22.OcxState = CType(resources.GetObject("AxLabel22.OcxState"), System.Windows.Forms.AxHost.State)
+        Me.AxLabel22.Size = New System.Drawing.Size(58, 22)
+        Me.AxLabel22.TabIndex = 81
+        '
+        'tbPrecio
+        '
+        Me.tbPrecio.Location = New System.Drawing.Point(459, 40)
+        Me.tbPrecio.Name = "tbPrecio"
+        Me.tbPrecio.OcxState = CType(resources.GetObject("tbPrecio.OcxState"), System.Windows.Forms.AxHost.State)
+        Me.tbPrecio.Size = New System.Drawing.Size(79, 23)
+        Me.tbPrecio.TabIndex = 78
+        '
+        'AxLabel21
+        '
+        Me.AxLabel21.Location = New System.Drawing.Point(459, 12)
+        Me.AxLabel21.Name = "AxLabel21"
+        Me.AxLabel21.OcxState = CType(resources.GetObject("AxLabel21.OcxState"), System.Windows.Forms.AxHost.State)
+        Me.AxLabel21.Size = New System.Drawing.Size(58, 22)
+        Me.AxLabel21.TabIndex = 79
+        '
+        'tbCantidad
+        '
+        Me.tbCantidad.Location = New System.Drawing.Point(361, 40)
+        Me.tbCantidad.Name = "tbCantidad"
+        Me.tbCantidad.OcxState = CType(resources.GetObject("tbCantidad.OcxState"), System.Windows.Forms.AxHost.State)
+        Me.tbCantidad.Size = New System.Drawing.Size(79, 23)
+        Me.tbCantidad.TabIndex = 77
+        '
+        'AxLabel20
+        '
+        Me.AxLabel20.Location = New System.Drawing.Point(361, 12)
+        Me.AxLabel20.Name = "AxLabel20"
+        Me.AxLabel20.OcxState = CType(resources.GetObject("AxLabel20.OcxState"), System.Windows.Forms.AxHost.State)
+        Me.AxLabel20.Size = New System.Drawing.Size(58, 22)
+        Me.AxLabel20.TabIndex = 76
+        '
+        'ckMante
+        '
+        Me.ckMante.Location = New System.Drawing.Point(310, 38)
+        Me.ckMante.Name = "ckMante"
+        Me.ckMante.OcxState = CType(resources.GetObject("ckMante.OcxState"), System.Windows.Forms.AxHost.State)
+        Me.ckMante.Size = New System.Drawing.Size(23, 28)
+        Me.ckMante.TabIndex = 75
+        '
+        'cbProductos
+        '
+        Me.cbProductos.Location = New System.Drawing.Point(121, 40)
+        Me.cbProductos.Name = "cbProductos"
+        Me.cbProductos.OcxState = CType(resources.GetObject("cbProductos.OcxState"), System.Windows.Forms.AxHost.State)
+        Me.cbProductos.Size = New System.Drawing.Size(110, 21)
+        Me.cbProductos.TabIndex = 73
+        '
+        'cbTipo
+        '
+        Me.cbTipo.Location = New System.Drawing.Point(20, 40)
+        Me.cbTipo.Name = "cbTipo"
+        Me.cbTipo.OcxState = CType(resources.GetObject("cbTipo.OcxState"), System.Windows.Forms.AxHost.State)
+        Me.cbTipo.Size = New System.Drawing.Size(80, 21)
+        Me.cbTipo.TabIndex = 72
+        '
+        'AxLabel19
+        '
+        Me.AxLabel19.Location = New System.Drawing.Point(297, 10)
+        Me.AxLabel19.Name = "AxLabel19"
+        Me.AxLabel19.OcxState = CType(resources.GetObject("AxLabel19.OcxState"), System.Windows.Forms.AxHost.State)
+        Me.AxLabel19.Size = New System.Drawing.Size(58, 22)
+        Me.AxLabel19.TabIndex = 71
+        '
+        'AxLabel9
+        '
+        Me.AxLabel9.Location = New System.Drawing.Point(254, 10)
+        Me.AxLabel9.Name = "AxLabel9"
+        Me.AxLabel9.OcxState = CType(resources.GetObject("AxLabel9.OcxState"), System.Windows.Forms.AxHost.State)
+        Me.AxLabel9.Size = New System.Drawing.Size(43, 22)
+        Me.AxLabel9.TabIndex = 70
+        '
+        'AxLabel8
+        '
+        Me.AxLabel8.Location = New System.Drawing.Point(121, 10)
+        Me.AxLabel8.Name = "AxLabel8"
+        Me.AxLabel8.OcxState = CType(resources.GetObject("AxLabel8.OcxState"), System.Windows.Forms.AxHost.State)
+        Me.AxLabel8.Size = New System.Drawing.Size(67, 22)
+        Me.AxLabel8.TabIndex = 69
+        '
+        'AxLabel5
+        '
+        Me.AxLabel5.Location = New System.Drawing.Point(20, 10)
+        Me.AxLabel5.Name = "AxLabel5"
+        Me.AxLabel5.OcxState = CType(resources.GetObject("AxLabel5.OcxState"), System.Windows.Forms.AxHost.State)
+        Me.AxLabel5.Size = New System.Drawing.Size(67, 22)
+        Me.AxLabel5.TabIndex = 68
         '
         'FrmPedidos
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1123, 626)
+        Me.ClientSize = New System.Drawing.Size(1123, 663)
+        Me.Controls.Add(Me.GroupBox2)
         Me.Controls.Add(Me.AxLabel18)
         Me.Controls.Add(Me.AxFlatEdit1)
         Me.Controls.Add(Me.AxLabel16)
@@ -455,8 +719,10 @@ Partial Class FrmPedidos
         CType(Me.txtLicencia, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.Titulo, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupBox1.ResumeLayout(False)
+        CType(Me.tbFecha, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.tbNumero, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.AxLabel15, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.AxLabel5, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.tbEstado, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.AxLabel10, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.AxLabel14, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.AxLabel4, System.ComponentModel.ISupportInitialize).EndInit()
@@ -465,8 +731,30 @@ Partial Class FrmPedidos
         CType(Me.AxLabel17, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.AxFlatEdit1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.AxLabel18, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.AxFlatEdit2, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.AxFlatEdit3, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.GroupBox2.ResumeLayout(False)
+        CType(Me.ckRed, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.AxPushButton1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.AxFlatEdit7, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.AxLabel26, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.AxFlatEdit6, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.AxLabel25, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.AxComboBox3, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.AxLabel24, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.tbImporte, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.AxLabel23, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.tbDto, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.AxLabel22, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.tbPrecio, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.AxLabel21, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.tbCantidad, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.AxLabel20, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.ckMante, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.cbProductos, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.cbTipo, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.AxLabel19, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.AxLabel9, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.AxLabel8, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.AxLabel5, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -496,7 +784,7 @@ Partial Class FrmPedidos
     Friend WithEvents Titulo As AxShortcutCaption
     Friend WithEvents GroupBox1 As Windows.Forms.GroupBox
     Friend WithEvents AxLabel15 As AxLabel
-    Friend WithEvents AxLabel5 As AxLabel
+    Friend WithEvents tbEstado As AxLabel
     Friend WithEvents AxLabel10 As AxLabel
     Friend WithEvents AxLabel14 As AxLabel
     Friend WithEvents AxLabel4 As AxLabel
@@ -505,6 +793,30 @@ Partial Class FrmPedidos
     Friend WithEvents AxLabel17 As AxLabel
     Friend WithEvents AxFlatEdit1 As AxFlatEdit
     Friend WithEvents AxLabel18 As AxLabel
-    Friend WithEvents AxFlatEdit3 As AxFlatEdit
-    Friend WithEvents AxFlatEdit2 As AxFlatEdit
+    Friend WithEvents tbFecha As AxFlatEdit
+    Friend WithEvents tbNumero As AxFlatEdit
+    Friend WithEvents GroupBox2 As GroupBox
+    Friend WithEvents AxLabel24 As AxLabel
+    Friend WithEvents tbImporte As AxFlatEdit
+    Friend WithEvents AxLabel23 As AxLabel
+    Friend WithEvents tbDto As AxFlatEdit
+    Friend WithEvents AxLabel22 As AxLabel
+    Friend WithEvents tbPrecio As AxFlatEdit
+    Friend WithEvents AxLabel21 As AxLabel
+    Friend WithEvents tbCantidad As AxFlatEdit
+    Friend WithEvents AxLabel20 As AxLabel
+    Friend WithEvents ckMante As AxCheckBox
+    Friend WithEvents cbProductos As AxComboBox
+    Friend WithEvents cbTipo As AxComboBox
+    Friend WithEvents AxLabel19 As AxLabel
+    Friend WithEvents AxLabel9 As AxLabel
+    Friend WithEvents AxLabel8 As AxLabel
+    Friend WithEvents AxLabel5 As AxLabel
+    Friend WithEvents AxPushButton1 As AxPushButton
+    Friend WithEvents AxFlatEdit7 As AxFlatEdit
+    Friend WithEvents AxLabel26 As AxLabel
+    Friend WithEvents AxFlatEdit6 As AxFlatEdit
+    Friend WithEvents AxLabel25 As AxLabel
+    Friend WithEvents AxComboBox3 As AxComboBox
+    Friend WithEvents ckRed As AxCheckBox
 End Class
